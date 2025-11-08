@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+
+/* Menu de Navegação */
+nav {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.slogan {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    max-width: 200px;
+    line-height: 1.4;
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.menu li a:hover {
+    color: #667eea;
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #667eea;
+    transition: width 0.3s ease;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    transition: all 0.3s ease;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #082537 0%, #0d3a52 100%);
+    border-radius: 20px;
+    padding: 80px 40px;
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.3em;
+    opacity: 0.9;
+}
+
+/* Seção Sobre */
+.about-section {
+    background: white;
+    border-radius: 20px;
+    padding: 60px 40px;
+    margin-bottom: 60px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-section p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Seção Contato */
+.contact-section {
+    background: white;
+    border-radius: 20px;
+    padding: 60px 40px;
+    margin-bottom: 60px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.contact-section p {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: #25D366;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-link:hover {
+    background: #20BA5A;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu {
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 90px);
+        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 20px;
+        transition: left 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a {
+        font-size: 18px;
+        padding: 10px 0;
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+        height: 90px;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1.1em;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .about-section h2 {
+        font-size: 2em;
+    }
+
+    .about-section p {
+        font-size: 1em;
+    }
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 2em;
+    }
+
+    .contact-section p {
+        font-size: 1em;
+    }
+
+    .whatsapp-link {
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+
+    .whatsapp-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
