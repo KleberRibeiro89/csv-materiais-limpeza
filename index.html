@@ -31,6 +31,30 @@
         <section class="hero" id="inicio">
             <h1>CSV Materiais de Limpeza</h1>
             <p class="subtitle">Tudo para a limpeza da sua empresa e residência</p>
+            
+            <div class="featured-products">
+                <h2 class="featured-title">Produtos Mais Vendidos</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Produto anterior">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Produtos serão inseridos via JavaScript -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Próximo produto">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                    <div class="carousel-dots" id="carouselDots">
+                        <!-- Dots serão inseridos via JavaScript -->
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="about-section" id="sobre">
@@ -47,6 +71,13 @@
             <p>
                 Seja para limpeza pesada, manutenção preventiva ou higienização especializada, a CSV Materiais de Limpeza é sua parceira ideal para manter o ambiente de trabalho limpo, seguro e produtivo.
             </p>
+        </section>
+
+        <section class="products-section" id="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Produtos serão inseridos aqui via JavaScript -->
+            </div>
         </section>
 
         <section class="contact-section" id="contato">
@@ -107,6 +138,247 @@
             link.addEventListener('click', () => {
                 menu.classList.remove('active');
             });
+        });
+
+        // Produtos mais vendidos para o carrossel
+        const featuredProducts = [
+            { image: 'images/products/alcool-70.jfif', name: 'Álcool 70%' },
+            { image: 'images/products/detergente-5-litros.jfif', name: 'Detergente 5 Litros' },
+            { image: 'images/products/agua-sanitario-bio-kriss.jfif', name: 'Água Sanitária Bio Kriss' },
+            { image: 'images/products/desinfetante-5-litros.jfif', name: 'Desinfetante 5 Litros' },
+            { image: 'images/products/papel-toalha.jfif', name: 'Papel Toalha' },
+            { image: 'images/products/sabao-em-po-urca.jfif', name: 'Sabão em Pó Urca' },
+            { image: 'images/products/veja-gold.jfif', name: 'Veja Gold' },
+            { image: 'images/products/luva-pvc.jfif', name: 'Luva PVC' }
+        ];
+
+        // Inicializar carrossel
+        let currentSlide = 0;
+        const carouselTrack = document.getElementById('carouselTrack');
+        const carouselDots = document.getElementById('carouselDots');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let autoSlideInterval;
+
+        // Verificar se os elementos existem antes de inicializar
+        if (!carouselTrack || !carouselDots || !prevBtn || !nextBtn) {
+            console.error('Elementos do carrossel não encontrados');
+        } else {
+            // Criar slides do carrossel
+            featuredProducts.forEach((product, index) => {
+                const slide = document.createElement('div');
+                slide.className = 'carousel-slide';
+                slide.innerHTML = `
+                    <div class="carousel-slide-content">
+                        <div class="carousel-image-container">
+                            <img src="${product.image}" alt="${product.name}" class="carousel-image" onerror="this.src='images/products/sem-nome001.jfif'">
+                        </div>
+                        <h3 class="carousel-product-name">${product.name}</h3>
+                    </div>
+                `;
+                carouselTrack.appendChild(slide);
+
+                // Criar dots
+                const dot = document.createElement('button');
+                dot.className = 'carousel-dot';
+                dot.setAttribute('aria-label', `Ir para slide ${index + 1}`);
+                dot.addEventListener('click', () => goToSlide(index));
+                carouselDots.appendChild(dot);
+            });
+
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+
+            // Função para atualizar o carrossel
+            function updateCarousel() {
+                carouselTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+                
+                // Atualizar dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+            }
+
+            // Função para ir para um slide específico
+            function goToSlide(index) {
+                currentSlide = index;
+                if (currentSlide >= slides.length) currentSlide = 0;
+                if (currentSlide < 0) currentSlide = slides.length - 1;
+                updateCarousel();
+                resetAutoSlide();
+            }
+
+            // Função para próximo slide
+            function nextSlide() {
+                currentSlide++;
+                if (currentSlide >= slides.length) currentSlide = 0;
+                updateCarousel();
+                resetAutoSlide();
+            }
+
+            // Função para slide anterior
+            function prevSlide() {
+                currentSlide--;
+                if (currentSlide < 0) currentSlide = slides.length - 1;
+                updateCarousel();
+                resetAutoSlide();
+            }
+
+            // Event listeners para os botões
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+
+            // Navegação automática
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 4000);
+            }
+
+            function resetAutoSlide() {
+                clearInterval(autoSlideInterval);
+                startAutoSlide();
+            }
+
+            // Pausar carrossel ao passar o mouse
+            const carouselContainer = document.querySelector('.carousel-container');
+            carouselContainer.addEventListener('mouseenter', () => {
+                clearInterval(autoSlideInterval);
+            });
+
+            carouselContainer.addEventListener('mouseleave', () => {
+                startAutoSlide();
+            });
+
+            // Inicializar
+            updateCarousel();
+            startAutoSlide();
+        }
+
+        // Lista de produtos com imagens
+        const products = [
+            { image: 'images/products/agua-sanitario-bio-kriss.jfif', name: 'Água Sanitária Bio Kriss' },
+            { image: 'images/products/agua-sanitario-clean-up.jfif', name: 'Água Sanitária Clean Up' },
+            { image: 'images/products/alcool-70-5-litros-perfumado.jfif', name: 'Álcool 70% 5 Litros Perfumado' },
+            { image: 'images/products/alcool-70-5-litros.jfif', name: 'Álcool 70% 5 Litros' },
+            { image: 'images/products/alcool-70.jfif', name: 'Álcool 70%' },
+            { image: 'images/products/alumil.jfif', name: 'Alumil' },
+            { image: 'images/products/balde.jfif', name: 'Balde' },
+            { image: 'images/products/bota-com-ca-cano-longo.jfif', name: 'Bota com CA Cano Longo' },
+            { image: 'images/products/bota-de-limpeza-com-ca.jfif', name: 'Bota de Limpeza com CA' },
+            { image: 'images/products/cera-liquida-polylar.jfif', name: 'Cera Líquida Polylar' },
+            { image: 'images/products/cera-liquida-preta.jfif', name: 'Cera Líquida Preta' },
+            { image: 'images/products/cloro-5-suprema.jfif', name: 'Cloro 5% Suprema' },
+            { image: 'images/products/cloro-ativo.jfif', name: 'Cloro Ativo' },
+            { image: 'images/products/coala.jfif', name: 'Coala' },
+            { image: 'images/products/copo-descartavel.jfif', name: 'Copo Descartável' },
+            { image: 'images/products/desinfetante-5-litros.jfif', name: 'Desinfetante 5 Litros' },
+            { image: 'images/products/detergente-5-litros.jfif', name: 'Detergente 5 Litros' },
+            { image: 'images/products/detergente-clorado.jfif', name: 'Detergente Clorado' },
+            { image: 'images/products/detergente-ype.jfif', name: 'Detergente Ypê' },
+            { image: 'images/products/esponja-antirrisco.jfif', name: 'Esponja Antirrisco' },
+            { image: 'images/products/esponsa.jfif', name: 'Esponja' },
+            { image: 'images/products/flanelas.jfif', name: 'Flanelas' },
+            { image: 'images/products/lavanda-suprema.jfif', name: 'Lavanda Suprema' },
+            { image: 'images/products/limpa-ceramicas-azulim.jfif', name: 'Limpa Cerâmicas Azulim' },
+            { image: 'images/products/limpa-pedra.jfif', name: 'Limpa Pedra' },
+            { image: 'images/products/limpa-vidros-suprema.jfif', name: 'Limpa Vidros Suprema' },
+            { image: 'images/products/lustra-moveis-bry-jasmim.jfif', name: 'Lustra Móveis BRY Jasmim' },
+            { image: 'images/products/lustra-moveis-fuzeto.jfif', name: 'Lustra Móveis Fuzeto' },
+            { image: 'images/products/lustra-moveis-uau-perfumes.jfif', name: 'Lustra Móveis UAU Perfumes' },
+            { image: 'images/products/luva-pvc.jfif', name: 'Luva PVC' },
+            { image: 'images/products/luvas-pvc.jfif', name: 'Luvas PVC' },
+            { image: 'images/products/nobre-400-folhas.jfif', name: 'Nobre 400 Folhas' },
+            { image: 'images/products/pa-cabo-longo.jfif', name: 'Pá Cabo Longo' },
+            { image: 'images/products/pa.jfif', name: 'Pá' },
+            { image: 'images/products/pacote-luva-pcv.jfif', name: 'Pacote Luva PCV' },
+            { image: 'images/products/paninho-de-micro-fibra.jfif', name: 'Paninho de Microfibra' },
+            { image: 'images/products/pano-de-chao.jfif', name: 'Pano de Chão' },
+            { image: 'images/products/pano-de-chao002.jfif', name: 'Pano de Chão' },
+            { image: 'images/products/pano-multi-uso.jfif', name: 'Pano Multi-uso' },
+            { image: 'images/products/papel-higienico.jfif', name: 'Papel Higiênico' },
+            { image: 'images/products/papel-toalha.jfif', name: 'Papel Toalha' },
+            { image: 'images/products/pasta-de-brilho-aluminio.jfif', name: 'Pasta de Brilho Alumínio' },
+            { image: 'images/products/pato-limpeza-profunda.jfif', name: 'Pato Limpeza Profunda' },
+            { image: 'images/products/pedra-sanitaria-azulim-acao-bacteriostatica.jfif', name: 'Pedra Sanitária Azulim Ação Bacteriostática' },
+            { image: 'images/products/pedra-sanitaria-azulim-floral.jfif', name: 'Pedra Sanitária Azulim Floral' },
+            { image: 'images/products/pedra-sanitaria-lipex.jfif', name: 'Pedra Sanitária Lipex' },
+            { image: 'images/products/pedra-sanitaria.jfif', name: 'Pedra Sanitária' },
+            { image: 'images/products/placa-sinalizacao-piso-molhado.jfif', name: 'Placa Sinalização Piso Molhado' },
+            { image: 'images/products/removedor-multi-uso.jfif', name: 'Removedor Multi-uso' },
+            { image: 'images/products/rodinho-de-pia.jfif', name: 'Rodinho de Pia' },
+            { image: 'images/products/rodo-001.jfif', name: 'Rodo' },
+            { image: 'images/products/rodo-002.jfif', name: 'Rodo' },
+            { image: 'images/products/rodo-003.jfif', name: 'Rodo' },
+            { image: 'images/products/sabao-barra-coco.jfif', name: 'Sabão Barra Coco' },
+            { image: 'images/products/sabao-em-po-urca.jfif', name: 'Sabão em Pó Urca' },
+            { image: 'images/products/sabao-glicerinado.jfif', name: 'Sabão Glicerinado' },
+            { image: 'images/products/saches-de-acucar.jfif', name: 'Sachês de Açúcar' },
+            { image: 'images/products/sapolio-multiuso-cremoso.jfif', name: 'Sapólio Multiuso Cremoso' },
+            { image: 'images/products/sem-nome001.jfif', name: 'Produto Especial 001' },
+            { image: 'images/products/sem-nome002.jfif', name: 'Produto Especial 002' },
+            { image: 'images/products/sem-nome003.jfif', name: 'Produto Especial 003' },
+            { image: 'images/products/sem-nome004.jfif', name: 'Produto Especial 004' },
+            { image: 'images/products/sem-nome005.jfif', name: 'Produto Especial 005' },
+            { image: 'images/products/sem-nome006.jfif', name: 'Produto Especial 006' },
+            { image: 'images/products/sem-nome007.jfif', name: 'Produto Especial 007' },
+            { image: 'images/products/sem-nome008.jfif', name: 'Produto Especial 008' },
+            { image: 'images/products/sem-nome009.jfif', name: 'Produto Especial 009' },
+            { image: 'images/products/sem-nome010.jfif', name: 'Produto Especial 010' },
+            { image: 'images/products/sem-nome011.jfif', name: 'Produto Especial 011' },
+            { image: 'images/products/sem-nome012.jfif', name: 'Produto Especial 012' },
+            { image: 'images/products/sem-nome013.jfif', name: 'Produto Especial 013' },
+            { image: 'images/products/sem-nome014.jfif', name: 'Produto Especial 014' },
+            { image: 'images/products/sem-nome015.jfif', name: 'Produto Especial 015' },
+            { image: 'images/products/sem-nome016.jfif', name: 'Produto Especial 016' },
+            { image: 'images/products/sem-nome017.jfif', name: 'Produto Especial 017' },
+            { image: 'images/products/sem-nome018.jfif', name: 'Produto Especial 018' },
+            { image: 'images/products/sem-nome019.jfif', name: 'Produto Especial 019' },
+            { image: 'images/products/sem-nome020.jfif', name: 'Produto Especial 020' },
+            { image: 'images/products/sem-nome021.jfif', name: 'Produto Especial 021' },
+            { image: 'images/products/tixam-ype-sabao-em-po.jfif', name: 'Tixam Ypê Sabão em Pó' },
+            { image: 'images/products/toalha-de-papel.jfif', name: 'Toalha de Papel' },
+            { image: 'images/products/vaselina-liquida.jfif', name: 'Vaselina Líquida' },
+            { image: 'images/products/vassoura-001.jfif', name: 'Vassoura' },
+            { image: 'images/products/vassoura-002.jfif', name: 'Vassoura' },
+            { image: 'images/products/vassoura-003.jfif', name: 'Vassoura' },
+            { image: 'images/products/veja-gold.jfif', name: 'Veja Gold' },
+            { image: 'images/products/vorel-perform-desinfetante.jfif', name: 'Vorel Perform Desinfetante' },
+            { image: 'images/products/x-14.jfif', name: 'X-14' }
+        ];
+
+        // Descrições aleatórias para os produtos
+        const descriptions = [
+            'Produto de alta qualidade para limpeza profissional. Ideal para uso industrial e residencial.',
+            'Solução eficiente e econômica para suas necessidades de limpeza diária.',
+            'Formulado com ingredientes de primeira linha para máxima eficácia e segurança.',
+            'Produto testado e aprovado, garantindo resultados superiores em cada uso.',
+            'Perfeito para ambientes que exigem limpeza profunda e desinfecção completa.',
+            'Economia e praticidade em um único produto. Rendimento superior comprovado.',
+            'Desenvolvido especialmente para profissionais que buscam excelência em limpeza.',
+            'Qualidade premium com preço justo. A melhor opção para seu negócio.',
+            'Produto versátil que atende múltiplas necessidades de limpeza e higienização.',
+            'Tecnologia avançada que garante limpeza eficiente e proteção duradoura.'
+        ];
+
+        // Função para gerar descrição aleatória
+        function getRandomDescription() {
+            return descriptions[Math.floor(Math.random() * descriptions.length)];
+        }
+
+        // Renderizar produtos
+        const productsGrid = document.getElementById('productsGrid');
+        products.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.className = 'product-card';
+            productCard.innerHTML = `
+                <div class="product-image-container">
+                    <img src="${product.image}" alt="${product.name}" class="product-image" onerror="this.src='images/products/sem-nome001.jfif'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-description">${getRandomDescription()}</p>
+                </div>
+            `;
+            productsGrid.appendChild(productCard);
         });
     </script>
 </body>
