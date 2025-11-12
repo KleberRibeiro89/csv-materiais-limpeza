@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Produtos - CSV Materiais de Limpeza</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .edit-page-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 30px;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #082537 0%, #0d3a52 100%);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .page-header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        .controls-bar {
+            background: white;
+            border-radius: 15px;
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 45px 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-success {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #20BA5A;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+
+        .products-edit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .product-edit-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .product-edit-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-edit-card.sem-nome {
+            border-color: #ffc107;
+        }
+
+        .product-edit-card.sem-nome::before {
+            content: "⚠️ Sem Nome";
+            display: block;
+            background: #ffc107;
+            color: #333;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .product-image-edit {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background: #f8f8f8;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .product-id {
+            font-size: 0.85em;
+            color: #999;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .stats-bar {
+            background: white;
+            border-radius: 15px;
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .save-indicator {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            display: none;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+            animation: slideIn 0.3s ease;
+        }
+
+        .save-indicator.show {
+            display: flex;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .edit-page-container {
+                padding: 20px 15px;
+            }
+
+            .page-header {
+                padding: 30px 20px;
+            }
+
+            .page-header h1 {
+                font-size: 1.8em;
+            }
+
+            .controls-bar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-box {
+                min-width: 100%;
+            }
+
+            .filter-buttons {
+                justify-content: center;
+            }
+
+            .action-buttons {
+                justify-content: center;
+            }
+
+            .products-edit-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-bar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .save-indicator {
+                bottom: 20px;
+                right: 20px;
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="edit-page-container">
+        <div class="page-header">
+            <h1>Edição de Produtos</h1>
+            <p>Edite o nome e descrição de todos os produtos, incluindo os sem nome</p>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value" id="totalProducts">0</div>
+                <div class="stat-label">Total de Produtos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="semNomeCount">0</div>
+                <div class="stat-label">Sem Nome</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="comNomeCount">0</div>
+                <div class="stat-label">Com Nome</div>
+            </div>
+        </div>
+
+        <div class="controls-bar">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Buscar produtos...">
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="sem-nome">Sem Nome</button>
+                <button class="filter-btn" data-filter="com-nome">Com Nome</button>
+            </div>
+            <div class="action-buttons">
+                <button class="btn btn-success" id="saveAllBtn">💾 Salvar Tudo</button>
+                <button class="btn btn-primary" id="exportBtn">📥 Exportar JSON</button>
+                <a href="index.html" class="btn btn-secondary">← Voltar ao Site</a>
+            </div>
+        </div>
+
+        <div class="products-edit-grid" id="productsEditGrid">
+            <!-- Produtos serão inseridos aqui via JavaScript -->
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            Nenhum produto encontrado com os filtros aplicados.
+        </div>
+    </div>
+
+    <div class="save-indicator" id="saveIndicator">
+        <span>✓</span>
+        <span>Alterações salvas com sucesso!</span>
+    </div>
+
+    <script>
+        // Lista completa de produtos (mesma do index.html)
+        const allProducts = [
+            { image: 'images/products/agua-sanitario-bio-kriss.jfif', name: 'Água Sanitária Bio Kriss', description: '' },
+            { image: 'images/products/agua-sanitario-clean-up.jfif', name: 'Água Sanitária Clean Up', description: '' },
+            { image: 'images/products/alcool-70-5-litros-perfumado.jfif', name: 'Álcool 70% 5 Litros Perfumado', description: '' },
+            { image: 'images/products/alcool-70-5-litros.jfif', name: 'Álcool 70% 5 Litros', description: '' },
+            { image: 'images/products/alcool-70.jfif', name: 'Álcool 70%', description: '' },
+            { image: 'images/products/alumil.jfif', name: 'Alumil', description: '' },
+            { image: 'images/products/balde.jfif', name: 'Balde', description: '' },
+            { image: 'images/products/bota-com-ca-cano-longo.jfif', name: 'Bota com CA Cano Longo', description: '' },
+            { image: 'images/products/bota-de-limpeza-com-ca.jfif', name: 'Bota de Limpeza com CA', description: '' },
+            { image: 'images/products/cera-liquida-polylar.jfif', name: 'Cera Líquida Polylar', description: '' },
+            { image: 'images/products/cera-liquida-preta.jfif', name: 'Cera Líquida Preta', description: '' },
+            { image: 'images/products/cloro-5-suprema.jfif', name: 'Cloro 5% Suprema', description: '' },
+            { image: 'images/products/cloro-ativo.jfif', name: 'Cloro Ativo', description: '' },
+            { image: 'images/products/coala.jfif', name: 'Coala', description: '' },
+            { image: 'images/products/copo-descartavel.jfif', name: 'Copo Descartável', description: '' },
+            { image: 'images/products/desinfetante-5-litros.jfif', name: 'Desinfetante 5 Litros', description: '' },
+            { image: 'images/products/detergente-5-litros.jfif', name: 'Detergente 5 Litros', description: '' },
+            { image: 'images/products/detergente-clorado.jfif', name: 'Detergente Clorado', description: '' },
+            { image: 'images/products/detergente-ype.jfif', name: 'Detergente Ypê', description: '' },
+            { image: 'images/products/esponja-antirrisco.jfif', name: 'Esponja Antirrisco', description: '' },
+            { image: 'images/products/esponsa.jfif', name: 'Esponja', description: '' },
+            { image: 'images/products/flanelas.jfif', name: 'Flanelas', description: '' },
+            { image: 'images/products/lavanda-suprema.jfif', name: 'Lavanda Suprema', description: '' },
+            { image: 'images/products/limpa-ceramicas-azulim.jfif', name: 'Limpa Cerâmicas Azulim', description: '' },
+            { image: 'images/products/limpa-pedra.jfif', name: 'Limpa Pedra', description: '' },
+            { image: 'images/products/limpa-vidros-suprema.jfif', name: 'Limpa Vidros Suprema', description: '' },
+            { image: 'images/products/lustra-moveis-bry-jasmim.jfif', name: 'Lustra Móveis BRY Jasmim', description: '' },
+            { image: 'images/products/lustra-moveis-fuzeto.jfif', name: 'Lustra Móveis Fuzeto', description: '' },
+            { image: 'images/products/lustra-moveis-uau-perfumes.jfif', name: 'Lustra Móveis UAU Perfumes', description: '' },
+            { image: 'images/products/luva-pvc.jfif', name: 'Luva PVC', description: '' },
+            { image: 'images/products/luvas-pvc.jfif', name: 'Luvas PVC', description: '' },
+            { image: 'images/products/nobre-400-folhas.jfif', name: 'Nobre 400 Folhas', description: '' },
+            { image: 'images/products/pa-cabo-longo.jfif', name: 'Pá Cabo Longo', description: '' },
+            { image: 'images/products/pa.jfif', name: 'Pá', description: '' },
+            { image: 'images/products/pacote-luva-pcv.jfif', name: 'Pacote Luva PCV', description: '' },
+            { image: 'images/products/paninho-de-micro-fibra.jfif', name: 'Paninho de Microfibra', description: '' },
+            { image: 'images/products/pano-de-chao.jfif', name: 'Pano de Chão', description: '' },
+            { image: 'images/products/pano-de-chao002.jfif', name: 'Pano de Chão', description: '' },
+            { image: 'images/products/pano-multi-uso.jfif', name: 'Pano Multi-uso', description: '' },
+            { image: 'images/products/papel-higienico.jfif', name: 'Papel Higiênico', description: '' },
+            { image: 'images/products/papel-toalha.jfif', name: 'Papel Toalha', description: '' },
+            { image: 'images/products/pasta-de-brilho-aluminio.jfif', name: 'Pasta de Brilho Alumínio', description: '' },
+            { image: 'images/products/pato-limpeza-profunda.jfif', name: 'Pato Limpeza Profunda', description: '' },
+            { image: 'images/products/pedra-sanitaria-azulim-acao-bacteriostatica.jfif', name: 'Pedra Sanitária Azulim Ação Bacteriostática', description: '' },
+            { image: 'images/products/pedra-sanitaria-azulim-floral.jfif', name: 'Pedra Sanitária Azulim Floral', description: '' },
+            { image: 'images/products/pedra-sanitaria-lipex.jfif', name: 'Pedra Sanitária Lipex', description: '' },
+            { image: 'images/products/pedra-sanitaria.jfif', name: 'Pedra Sanitária', description: '' },
+            { image: 'images/products/placa-sinalizacao-piso-molhado.jfif', name: 'Placa Sinalização Piso Molhado', description: '' },
+            { image: 'images/products/removedor-multi-uso.jfif', name: 'Removedor Multi-uso', description: '' },
+            { image: 'images/products/rodinho-de-pia.jfif', name: 'Rodinho de Pia', description: '' },
+            { image: 'images/products/rodo-001.jfif', name: 'Rodo', description: '' },
+            { image: 'images/products/rodo-002.jfif', name: 'Rodo', description: '' },
+            { image: 'images/products/rodo-003.jfif', name: 'Rodo', description: '' },
+            { image: 'images/products/sabao-barra-coco.jfif', name: 'Sabão Barra Coco', description: '' },
+            { image: 'images/products/sabao-em-po-urca.jfif', name: 'Sabão em Pó Urca', description: '' },
+            { image: 'images/products/sabao-glicerinado.jfif', name: 'Sabão Glicerinado', description: '' },
+            { image: 'images/products/saches-de-acucar.jfif', name: 'Sachês de Açúcar', description: '' },
+            { image: 'images/products/sapolio-multiuso-cremoso.jfif', name: 'Sapólio Multiuso Cremoso', description: '' },
+            { image: 'images/products/sem-nome001.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome002.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome003.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome004.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome005.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome006.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome007.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome008.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome009.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome010.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome011.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome012.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome013.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome014.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome015.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome016.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome017.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome018.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome019.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome020.jfif', name: '', description: '' },
+            { image: 'images/products/sem-nome021.jfif', name: '', description: '' },
+            { image: 'images/products/tixam-ype-sabao-em-po.jfif', name: 'Tixam Ypê Sabão em Pó', description: '' },
+            { image: 'images/products/toalha-de-papel.jfif', name: 'Toalha de Papel', description: '' },
+            { image: 'images/products/vaselina-liquida.jfif', name: 'Vaselina Líquida', description: '' },
+            { image: 'images/products/vassoura-001.jfif', name: 'Vassoura', description: '' },
+            { image: 'images/products/vassoura-002.jfif', name: 'Vassoura', description: '' },
+            { image: 'images/products/vassoura-003.jfif', name: 'Vassoura', description: '' },
+            { image: 'images/products/veja-gold.jfif', name: 'Veja Gold', description: '' },
+            { image: 'images/products/vorel-perform-desinfetante.jfif', name: 'Vorel Perform Desinfetante', description: '' },
+            { image: 'images/products/x-14.jfif', name: 'X-14', description: '' }
+        ];
+
+        // Carregar dados salvos do localStorage
+        function loadSavedData() {
+            const saved = localStorage.getItem('produtosEditados');
+            if (saved) {
+                const savedProducts = JSON.parse(saved);
+                // Mesclar dados salvos com a lista original
+                allProducts.forEach((product, index) => {
+                    const savedProduct = savedProducts.find(p => p.image === product.image);
+                    if (savedProduct) {
+                        product.name = savedProduct.name || product.name;
+                        product.description = savedProduct.description || product.description;
+                    }
+                });
+            }
+        }
+
+        // Salvar dados no localStorage
+        function saveData() {
+            localStorage.setItem('produtosEditados', JSON.stringify(allProducts));
+            showSaveIndicator();
+        }
+
+        // Mostrar indicador de salvamento
+        function showSaveIndicator() {
+            const indicator = document.getElementById('saveIndicator');
+            indicator.classList.add('show');
+            setTimeout(() => {
+                indicator.classList.remove('show');
+            }, 3000);
+        }
+
+        // Renderizar produtos
+        function renderProducts(productsToRender = allProducts) {
+            const grid = document.getElementById('productsEditGrid');
+            const noResults = document.getElementById('noResults');
+            grid.innerHTML = '';
+
+            if (productsToRender.length === 0) {
+                noResults.style.display = 'block';
+                return;
+            }
+
+            noResults.style.display = 'none';
+
+            productsToRender.forEach((product, index) => {
+                const isSemNome = !product.name || product.name.trim() === '';
+                const card = document.createElement('div');
+                card.className = `product-edit-card ${isSemNome ? 'sem-nome' : ''}`;
+                card.dataset.index = index;
+                
+                const productId = product.image.split('/').pop().replace('.jfif', '');
+                
+                card.innerHTML = `
+                    <img src="${product.image}" alt="${product.name || 'Produto sem nome'}" class="product-image-edit" onerror="this.src='images/products/sem-nome001.jfif'">
+                    <div class="form-group">
+                        <label for="name-${index}">Nome do Produto *</label>
+                        <input type="text" id="name-${index}" class="product-name-input" value="${product.name || ''}" placeholder="Digite o nome do produto">
+                    </div>
+                    <div class="form-group">
+                        <label for="desc-${index}">Descrição</label>
+                        <textarea id="desc-${index}" class="product-desc-input" placeholder="Digite a descrição do produto">${product.description || ''}</textarea>
+                    </div>
+                    <div class="product-id">ID: ${productId}</div>
+                `;
+
+                // Adicionar event listeners
+                const nameInput = card.querySelector('.product-name-input');
+                const descInput = card.querySelector('.product-desc-input');
+
+                nameInput.addEventListener('input', (e) => {
+                    const idx = parseInt(card.dataset.index);
+                    allProducts[idx].name = e.target.value;
+                    updateStats();
+                    // Atualizar classe sem-nome
+                    if (e.target.value.trim() === '') {
+                        card.classList.add('sem-nome');
+                    } else {
+                        card.classList.remove('sem-nome');
+                    }
+                });
+
+                descInput.addEventListener('input', (e) => {
+                    const idx = parseInt(card.dataset.index);
+                    allProducts[idx].description = e.target.value;
+                });
+
+                grid.appendChild(card);
+            });
+        }
+
+        // Atualizar estatísticas
+        function updateStats() {
+            const total = allProducts.length;
+            const semNome = allProducts.filter(p => !p.name || p.name.trim() === '').length;
+            const comNome = total - semNome;
+
+            document.getElementById('totalProducts').textContent = total;
+            document.getElementById('semNomeCount').textContent = semNome;
+            document.getElementById('comNomeCount').textContent = comNome;
+        }
+
+        // Filtrar produtos
+        let currentFilter = 'all';
+        let currentSearch = '';
+
+        function filterProducts() {
+            let filtered = allProducts;
+
+            // Aplicar filtro
+            if (currentFilter === 'sem-nome') {
+                filtered = filtered.filter(p => !p.name || p.name.trim() === '');
+            } else if (currentFilter === 'com-nome') {
+                filtered = filtered.filter(p => p.name && p.name.trim() !== '');
+            }
+
+            // Aplicar busca
+            if (currentSearch.trim() !== '') {
+                const searchLower = currentSearch.toLowerCase();
+                filtered = filtered.filter(p => 
+                    (p.name && p.name.toLowerCase().includes(searchLower)) ||
+                    (p.description && p.description.toLowerCase().includes(searchLower))
+                );
+            }
+
+            renderProducts(filtered);
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            filterProducts();
+        });
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                filterProducts();
+            });
+        });
+
+        document.getElementById('saveAllBtn').addEventListener('click', () => {
+            saveData();
+        });
+
+        document.getElementById('exportBtn').addEventListener('click', () => {
+            const dataStr = JSON.stringify(allProducts, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'produtos-editados.json';
+            link.click();
+            URL.revokeObjectURL(url);
+        });
+
+        // Inicializar
+        loadSavedData();
+        updateStats();
+        renderProducts();
+    </script>
+</body>
+</html>
+
