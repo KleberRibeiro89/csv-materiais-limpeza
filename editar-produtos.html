@@ -410,9 +410,10 @@
         <span>Alterações salvas com sucesso!</span>
     </div>
 
+    <script src="./data.js"></script>
     <script>
         // Lista completa de produtos (mesma do index.html)
-        const allProducts = [
+        let allProducts = [
             { image: 'images/products/agua-sanitario-bio-kriss.jfif', name: 'Água Sanitária Bio Kriss', description: '' },
             { image: 'images/products/agua-sanitario-clean-up.jfif', name: 'Água Sanitária Clean Up', description: '' },
             { image: 'images/products/alcool-70-5-litros-perfumado.jfif', name: 'Álcool 70% 5 Litros Perfumado', description: '' },
@@ -503,6 +504,24 @@
             { image: 'images/products/x-14.jfif', name: 'X-14', description: '' }
         ];
 
+        // Carregar descrições do data.js
+        function loadDescriptionsFromData() {
+            // Aguardar o carregamento do data.js
+            if (typeof products !== 'undefined') {
+                // Mesclar descrições do data.js com a lista de produtos
+                allProducts.forEach((product) => {
+                    const dataProduct = products.find(p => p.image === product.image);
+                    if (dataProduct && dataProduct.description && dataProduct.description.trim() !== '') {
+                        product.description = dataProduct.description;
+                        // Também atualizar o nome se estiver vazio
+                        if (!product.name || product.name.trim() === '') {
+                            product.name = dataProduct.name || product.name;
+                        }
+                    }
+                });
+            }
+        }
+
         // Carregar dados salvos do localStorage
         function loadSavedData() {
             const saved = localStorage.getItem('produtosEditados');
@@ -513,7 +532,10 @@
                     const savedProduct = savedProducts.find(p => p.image === product.image);
                     if (savedProduct) {
                         product.name = savedProduct.name || product.name;
-                        product.description = savedProduct.description || product.description;
+                        // Só sobrescrever descrição se não houver uma do data.js
+                        if (!product.description || product.description.trim() === '') {
+                            product.description = savedProduct.description || product.description;
+                        }
                     }
                 });
             }
@@ -661,9 +683,34 @@
         });
 
         // Inicializar
-        loadSavedData();
-        updateStats();
-        renderProducts();
+        // Aguardar o carregamento do data.js antes de inicializar
+        function initialize() {
+            // Tentar carregar descrições do data.js
+            if (typeof products !== 'undefined') {
+                loadDescriptionsFromData();
+            } else {
+                // Se ainda não carregou, tentar novamente após um pequeno delay
+                setTimeout(() => {
+                    loadDescriptionsFromData();
+                    loadSavedData();
+                    updateStats();
+                    renderProducts();
+                }, 100);
+                return;
+            }
+            
+            loadSavedData();
+            updateStats();
+            renderProducts();
+        }
+
+        // Aguardar o DOM estar pronto
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initialize);
+        } else {
+            // Se o data.js já foi carregado, inicializar imediatamente
+            setTimeout(initialize, 50);
+        }
     </script>
 </body>
 </html>
