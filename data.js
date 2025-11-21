@@ -27,22 +27,22 @@ const products = [
   },
   {
     "image": "images/products/alcool-70-5-litros.jfif",
-    "name": "Álcool 70% 5 Litros Tauipe",
+    "name": "Álcool 70% 5 Litros",
     "description": "Produto destinado à higienização e desinfecção de superfícies em geral. O Álcool 70% possui ação bactericida e virucida, eliminando microrganismos com eficiência comprovada. Indicado para uso em ambientes domésticos, comerciais, industriais e institucionais, garantindo limpeza e proteção em diferentes superfícies.\n\nComposição:\nÁlcool etílico hidratado 70% p/p e água.\n\npH: Neutro (entre 6 e 8)\n\nAplicações:\n\nDesinfecção de bancadas, mesas, maçanetas, pisos, paredes e superfícies em geral;\n\nUso em escritórios, comércios, clínicas, escolas, indústrias e residências;\n\nIndicado para limpeza de equipamentos e objetos de uso frequente.\n\nModo de uso:\nAplicar o produto puro sobre a superfície com pano limpo, papel toalha ou pulverizador. Deixar agir por no mínimo 30 segundos para garantir a ação desinfetante. Não é necessário enxaguar.\n\nPrecauções:\nProduto inflamável. Manter afastado de calor, chamas e faíscas. Evitar inalação prolongada e contato com os olhos. Conservar em local ventilado, fresco e protegido da luz solar. Não ingerir. Manter fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/alcool-70.jfif",
-    "name": "Álcool 70% 1L",
+    "name": "Álcool 70%",
     "description": "Produto indicado para higienização e desinfecção de superfícies em geral. O Álcool 70% possui comprovada ação bactericida e virucida, garantindo limpeza eficiente e rápida secagem. Ideal para uso doméstico, comercial e institucional.\n\nComposição:\nÁlcool etílico hidratado 70% p/p e água.\n\npH: Neutro (entre 6 e 8)\n\nAplicações:\n\nDesinfecção e limpeza de bancadas, mesas, maçanetas, pisos, paredes e superfícies em geral;\n\nUso em ambientes domésticos, escritórios, clínicas, comércios e escolas;\n\nIndicado para higienização de equipamentos e objetos de uso frequente.\n\nModo de uso:\nAplicar o produto puro sobre a superfície com pano limpo, papel toalha ou pulverizador. Deixar agir por pelo menos 30 segundos para garantir a ação desinfetante. Não é necessário enxaguar.\n\nPrecauções:\nProduto inflamável. Manter afastado de calor, faíscas e chamas. Evitar inalação prolongada e contato com os olhos. Conservar em local ventilado, fresco e protegido da luz solar. Não ingerir. Manter fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/alumil.jfif",
-    "name": "Limpa Alumínio Alumil 500ML",
+    "name": "Alumil",
     "description": "Produto especialmente formulado para a limpeza e remoção de sujeiras pesadas, manchas e oxidações em superfícies de alumínio. O Limpa Alumínio Alumil devolve o brilho original, removendo resíduos de gordura e escurecimento causados pelo tempo e pelo calor. Indicado para uso doméstico e profissional.\n\nComposição:\nÁcidos inorgânicos, agentes tensoativos, espessantes, corante e veículo.\n\npH: Ácido (entre 1 e 3)\n\nAplicações:\n\nPanelas, formas, utensílios e superfícies de alumínio;\n\nJanelas, portas, esquadrias e peças metálicas;\n\nUso doméstico, industrial e institucional.\n\nModo de uso:\nAplicar o produto puro com o auxílio de esponja, pano ou pincel sobre a superfície fria e seca. Espalhar uniformemente e deixar agir por alguns segundos. Esfregar levemente e enxaguar abundantemente com água. Repetir se necessário.\n\nPrecauções:\n\nNão utilizar em superfícies pintadas, anodizadas ou em metais como aço inox, cobre e latão.\n\nEvitar contato prolongado com a pele e os olhos.\n\nNão misturar com outros produtos químicos.\n\nArmazenar em local fresco, ventilado e protegido da luz solar.\n\nManter fora do alcance de crianças e animais domésticos.\n\nApresentação:\nFrasco plástico de 500 mL com tampa rosqueável ou bico aplicador."
   },
   {
     "image": "images/products/balde.jfif",
-    "name": "Balde 8L",
+    "name": "Balde",
     "description": "Balde plástico resistente, desenvolvido para auxiliar em tarefas de limpeza, transporte e armazenamento de líquidos. O Balde 8 Litros oferece praticidade, durabilidade e fácil manuseio, sendo ideal para uso doméstico, comercial e profissional.\n\nMaterial:\nPolipropileno (PP) de alta resistência.\n\nCapacidade:\n8 litros.\n\nDimensões aproximadas:\nAltura: 22–25 cm\nDiâmetro superior: 26–28 cm\nDiâmetro inferior: 22–24 cm\n\nCaracterísticas:\n\nLeve e resistente a impactos;\n\nPossui alça ergonômica para transporte seguro;\n\nDesign anatômico com bico direcionador para facilitar o despejo de líquidos;\n\nCompatível com produtos de limpeza e soluções químicas diluídas.\n\nAplicações:\n\nArmazenamento e transporte de água, soluções de limpeza e produtos químicos diluídos;\n\nUso em residências, comércios, escritórios, indústrias e empresas de limpeza profissional.\n\nCuidados:\nEvitar o contato com substâncias altamente corrosivas ou solventes fortes. Lavar e secar após o uso. Armazenar em local limpo e arejado, protegido da luz solar direta."
   },
   {
@@ -52,402 +52,402 @@ const products = [
   },
   {
     "image": "images/products/bota-de-limpeza-com-ca.jfif",
-    "name": "Bota de Limpeza com CA (BB80)",
+    "name": "Bota de Limpeza com CA",
     "description": "Bota de segurança tipo galocha, modelo BB80, confeccionada em PVC preto de alta resistência. Indicada para proteção dos pés contra umidade e agentes químicos em ambientes de limpeza e manutenção. Possui excelente durabilidade, conforto e aderência, sendo ideal para uso profissional contínuo.\n\nMaterial:\n\nCorpo: PVC injetado, impermeável e resistente a produtos químicos diluídos;\n\nSolado: PVC antiderrapante, com ranhuras que garantem estabilidade em superfícies molhadas e escorregadias;\n\nInterior: superfície lisa, facilitando a higienização.\n\nCertificação:\nProduto com CA (Certificado de Aprovação) emitido pelo Ministério do Trabalho e Emprego, conforme norma NR-06 – Equipamento de Proteção Individual (EPI).\n\nCaracterísticas:\n\nTotalmente impermeável;\n\nSolado antiderrapante e resistente à abrasão;\n\nConfortável e leve, ideal para uso prolongado;\n\nProtege contra agentes químicos, biológicos e umidade;\n\nFácil de limpar e secar.\n\nAplicações:\n\nSetor de limpeza e conservação;\n\nIndústrias de alimentos, bebidas e saneantes;\n\nLava-rápidos, frigoríficos e cozinhas industriais;\n\nAmbientes úmidos e com risco de escorregamento.\n\nCuidados:\nLavar com água e sabão neutro após o uso. Secar à sombra. Evitar exposição direta ao sol e ao calor. Não utilizar solventes ou produtos abrasivos.\n\nApresentação:\nPar de botas BB80 preta, fabricada em PVC, disponível nos tamanhos 36 ao 45."
   },
   {
     "image": "images/products/cera-liquida-polylar.jfif",
-    "name": "Cera Incolor Polylar Floral 5L – Start",
+    "name": "Cera Líquida Polylar",
     "description": "A Cera Incolor Polylar Floral Start é uma cera acrílica autobrillante desenvolvida para conservação, brilho e proteção de pisos laváveis. Sua fórmula balanceada proporciona brilho intenso, resistência ao tráfego e agradável fragrância floral, mantendo o ambiente limpo e com aparência renovada por mais tempo.\n\nComposição:\nEmulsão acrílica, ceras sintéticas, plastificantes, conservantes, fragrância e veículo aquoso.\n\npH: Neutro (entre 7 e 9)\n\nAspecto: Líquido leitoso branco – fragrância floral.\n\nAplicações:\nIndicada para uso em pisos laváveis como:\n\nVinílicos, paviflex e emborrachados;\n\nCimentados e granilite tratados;\n\nPisos tratados com base seladora acrílica;\n\nÁreas internas de condomínios, escritórios, escolas, hospitais, indústrias e comércios em geral.\n\nModo de uso:\n\nLimpar e secar completamente a superfície antes da aplicação.\n\nAplicar uma fina camada com mop, pano aplicador ou enceradeira, espalhando uniformemente.\n\nAguardar secagem (aprox. 30 minutos).\n\nAplicar de 2 a 3 camadas conforme o nível de brilho desejado.\n\nPara revitalização, polir com enceradeira de alta rotação e disco branco ou vermelho.\n\nRendimento:\nEm média 40 a 60 m² por litro, dependendo da porosidade do piso e número de demãos aplicadas.\n\nPrecauções:\nEvitar aplicação sobre superfícies enceradas com produtos à base de solvente.\nManter fora do alcance de crianças e animais.\nEvitar o congelamento do produto. Armazenar em local fresco e ventilado."
   },
   {
     "image": "images/products/cera-liquida-preta.jfif",
-    "name": "Cera Líquida Preta Pretita 5L",
+    "name": "Cera Líquida Preta",
     "description": "A Cera Líquida Preta Pretita é uma cera de alta performance desenvolvida para dar brilho, proteger e renovar pisos escuros, principalmente de cimento, cerâmica rústica e pedras naturais. Sua formulação especial realça a cor original, disfarça imperfeições e forma uma película protetora resistente, garantindo aparência uniforme e duradoura.\n\nComposição:\nCeras naturais e sintéticas, emulsificantes, pigmento preto, conservantes, fragrância e veículo aquoso.\n\npH: Neutro (entre 7 e 9)\n\nAspecto: Líquido preto homogêneo.\n\nAplicações:\n\nPisos de cimento queimado, cerâmicas escuras, pedras rústicas e ardósia;\n\nÁreas internas e externas cobertas;\n\nIndicada para uso doméstico, comercial e institucional.\n\nModo de uso:\n\nLimpar o piso removendo completamente sujeira, poeira e resíduos de ceras antigas.\n\nAplicar o produto puro com pano limpo, mop ou enceradeira, espalhando de forma uniforme.\n\nAguardar a secagem completa (aprox. 30 a 40 minutos).\n\nAplicar de 2 a 3 camadas, se necessário, para melhor acabamento e cobertura.\n\nPara revitalização do brilho, pode ser polida com enceradeira e disco adequado.\n\nRendimento:\nAproximadamente 40 a 60 m² por litro, dependendo da porosidade e tipo de piso.\n\nPrecauções:\nEvitar aplicação em pisos claros, pois o pigmento pode manchar.\nManter fora do alcance de crianças e animais.\nArmazenar em local fresco, ventilado e protegido da luz solar.\nNão misturar com outros produtos químicos."
   },
   {
     "image": "images/products/cloro-5-suprema.jfif",
-    "name": "Cloro 5% Suprema Ativo Concentrado",
+    "name": "Cloro 5% Suprema",
     "description": "O Cloro 5% Suprema Ativo Concentrado é um desinfetante à base de hipoclorito de sódio, indicado para limpeza, alvejamento e desinfecção de superfícies. Sua formulação concentrada possui alta eficiência na eliminação de microrganismos, germes e bactérias, garantindo higiene e segurança em ambientes domésticos e institucionais.\n\nComposição:\nHipoclorito de sódio (5% de cloro ativo), água, hidróxido de sódio e estabilizantes.\n\npH: Alcalino (entre 11 e 13)\n\nAspecto: Líquido levemente amarelado, com odor característico de cloro.\n\nAplicações:\n\nDesinfecção de pisos, azulejos, banheiros, ralos e áreas de manipulação de alimentos;\n\nAlvejamento de roupas brancas e remoção de manchas;\n\nTratamento e higienização de áreas molhadas e superfícies laváveis em geral;\n\nUso doméstico, comercial e institucional.\n\nModo de uso:\n\nDesinfecção: Diluir 1 copo (200 mL) em 5 litros de água. Aplicar sobre a superfície, deixar agir por 10 minutos e enxaguar.\n\nAlvejamento de roupas: Utilizar 100 mL para cada 10 litros de água, deixar de molho por até 10 minutos e enxaguar completamente.\n\nUso direto: Aplicar puro em locais de sujeira intensa, deixando agir por alguns minutos antes de enxaguar.\n\nRendimento:\nVaria conforme diluição e tipo de aplicação.\n\nPrecauções:\n\nNão misturar com produtos à base de amônia ou ácidos.\n\nEvitar contato com metais, tecidos coloridos e superfícies pintadas.\n\nArmazenar em local fresco, ventilado e protegido da luz solar.\n\nManter fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/cloro-ativo.jfif",
-    "name": "Cloro Ativo",
-    "description": ""
+    "name": "Tira Limo com Cloro Ativo – 500 mL",
+    "description": "Descrição:\nO Tira Limo com Cloro Ativo é um limpador desinfetante desenvolvido para remover limo, mofo, bolor e manchas difíceis em superfícies úmidas. Sua fórmula com cloro ativo proporciona ação rápida e eficaz, deixando o local limpo, higienizado e com aparência renovada. Ideal para áreas de alto acúmulo de umidade.\n\nComposição:\nHipoclorito de sódio, agentes tensoativos, alcalinizantes, estabilizantes e água.\n\npH: Alcalino (11 a 13)\n\nAspecto: Líquido transparente ou levemente amarelado, com odor característico de cloro.\n\nAplicações:\n\nBanheiros: azulejos, rejuntes, box, pisos, ralos, vasos sanitários;\n\nCozinhas e áreas de serviço: superfícies laváveis, tanques e áreas molhadas;\n\nAmbientes com mofo, bolor e escurecimento devido à umidade.\n\nModo de uso:\n\nAplicar o produto puro diretamente sobre a área com limo, mofo ou sujeira pesada.\n\nDeixar agir por 5 a 10 minutos.\n\nEsfregar com escova ou esponja, se necessário.\n\nEnxaguar abundantemente com água.\n\nRepetir o processo para manchas mais resistentes.\n\nImportante: Não aplicar em superfícies metálicas, tecidos ou pedras naturais sensíveis ao cloro.\n\nPrecauções:\n\nNão misturar com produtos à base de amônia ou ácidos.\n\nEvitar contato com a pele, olhos e roupas.\n\nUsar luvas ao aplicar.\n\nArmazenar em local fresco, ventilado e ao abrigo da luz.\n\nManter fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/coala.jfif",
-    "name": "Coala",
-    "description": ""
+    "name": "Essências para Limpador Perfumado – 120 mL (Diversas Fragrâncias) Coala",
+    "description": "Descrição:\nAs Essências para Limpador Perfumado 120 mL são fragrâncias concentradas, formuladas para aplicação em saneantes domissanitários, proporcionando perfumação intensa, fresca e duradoura. São compatíveis com limpadores perfumados, desinfetantes, detergentes, ceras líquidas, multiusos e produtos de uso profissional e doméstico.\n\nComposição:\nMistura de fragrâncias, solventes, fixadores aromáticos e veículo adequado para produtos de base aquosa.\n\nAspecto:\nLíquido incolor ou levemente colorido, variando conforme a fragrância.\n\nFragrâncias Disponíveis:\n\nLavanda\n\nBambu\n\nChá Branco\n\nTalco\n\nFloral\n\nCapim Limão\n\nAlgas Marinhas\n\nAlgodão\n\nCitronela\n\nEucalipto\n\nErva Doce\n\nBaunilha\n\nAmeixa Dourada\n\nOrquídea\n\nPatchouli com Tangerina\n\nCravo e Canela\n\nAplicações:\n\nFabricação de Limpadores Perfumados\n\nReforço de aroma em produtos prontos\n\nUso em detergentes, desinfetantes e ceras\n\nIdeal para fabricantes, distribuidoras e uso profissional\n\nModo de Uso:\nAdicionar a essência ao produto base sob leve agitação.\n\nDosagem recomendada: 0,5% a 2%, conforme a intensidade desejada.\n\nCuidados:\n\nArmazenar em local fresco, ventilado e protegido da luz.\n\nNão aplicar diretamente sobre superfícies sem diluição.\n\nEvitar contato com olhos e pele.\n\nManter fora do alcance de crianças e animais.\n\nApresentação:\nFrasco plástico de 120 mL com tampa rosqueável ou dosador."
   },
   {
     "image": "images/products/copo-descartavel.jfif",
-    "name": "Copo Descartável",
-    "description": ""
+    "name": "Copo Descartável para Café 80 mL – Pacote com 100 Unidades",
+    "description": "Descrição:\nO Copo Descartável para Café 80 mL é fabricado em poliestireno (PS) de alta qualidade, garantindo resistência, praticidade e higiene no consumo de bebidas quentes e frias. Ideal para uso em escritórios, estabelecimentos comerciais, eventos, consultórios e áreas de atendimento ao público.\n\nMaterial:\nPoliestireno (PS) – plástico rígido, leve e seguro para uso alimentar.\n\nCapacidade:\n80 mL\n\nAplicações:\n\nCafé e bebidas quentes\n\nÁgua e refrescos em pequenas porções\n\nUso corporativo, comercial e doméstico\n\nAmbientes de recepção e atendimento\n\nCaracterísticas:\n\nCopos resistentes e com ótimo acabamento\n\nDescartáveis, garantindo praticidade e higiene\n\nTamanho ideal para café e bebidas rápidas\n\nCompatível com porta-copos padrão 80 mL\n\nQuantidade:\nPacote com 100 unidades\n\nArmazenamento:\nManter em local seco, protegido da luz solar e longe de umidade."
   },
   {
     "image": "images/products/desinfetante-5-litros.jfif",
-    "name": "Desinfetante 5 Litros",
-    "description": ""
+    "name": "Desinfetante Concentrado Talco Wash 5L – Archote",
+    "description": "Descrição:\nO Desinfetante Concentrado Talco Wash 5L – Archote é um saneante de alta performance, formulado para limpeza, desodorização e desinfecção de ambientes. Sua fragrância Talco Wash proporciona perfume suave, agradável e duradouro, deixando sensação de frescor após a aplicação. Ideal para uso profissional e doméstico.\n\nAção:\n\nLimpa, desinfeta e perfuma\n\nElimina odores desagradáveis\n\nMantém o ambiente aromatizado por horas\n\nIndicação de Uso:\nRecomendado para pisos, azulejos, superfícies laváveis, áreas internas e externas, estabelecimentos comerciais, condomínios, indústrias, clínicas e residências.\n\nDiluição:\nPor ser concentrado, permite alto rendimento.\n\nPara limpeza geral: diluir conforme necessidade, normalmente entre 1:10 a 1:50, dependendo da intensidade desejada.\n\nPara perfumação ambiente: diluir em proporções maiores, conforme orientação de uso.\n\nModo de Aplicação:\nAplicar o produto diluído diretamente sobre a superfície, espalhar com pano, mop ou rodo e deixar secar naturalmente. Não necessita enxágue, exceto em áreas de preparo de alimentos.\n\nCaracterísticas:\n\nAlto poder bactericida e desodorizante\n\nFragrância Talco Wash suave e prolongada\n\nEconômico e de excelente rendimento\n\nIdeal para uso profissional\n\nVolume:\n5 Litros\n\nArmazenamento:\nManter em local fresco, ao abrigo do sol e fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/detergente-5-litros.jfif",
-    "name": "Detergente 5 Litros",
-    "description": ""
+    "name": "Detergente Clean UP 5L",
+    "description": "Descrição:\nO Detergente Clean UP 5L é um detergente líquido de alta eficiência, desenvolvido para limpeza geral de superfícies, utensílios e áreas que exigem remoção eficaz de sujeiras e gorduras. Sua fórmula balanceada oferece excelente desempenho, garantindo limpeza profunda sem agredir as superfícies.\n\nAção:\n\nRemove gordura, resíduos e sujeiras difíceis\n\nAtua com espuma controlada e enxágue fácil\n\nIndicado para uso profissional e doméstico\n\nIndicação de Uso:\nRecomendado para cozinhas industriais, restaurantes, comércios, condomínios, limpeza geral de piso, superfícies laváveis, bancadas, inox, plástico, cerâmica e utensílios.\n\nCaracterísticas:\n\nAlto poder desengordurante\n\nFórmula segura e eficiente\n\nNão agride superfícies\n\nRendimento excelente em uso diluído\n\nAroma leve e agradável (se quiser posso incluir a fragrância, caso exista)\n\nDiluição:\n\nLimpeza pesada: usar puro ou com pouca diluição\n\nLimpeza geral: diluir conforme necessidade, normalmente 1:10 a 1:50\n\nModo de Uso:\nAplicar sobre a superfície ou utensílio, esfregar com esponja, pano ou mop e enxaguar.\n\nVolume:\n5 Litros\n\nArmazenamento:\nManter em local fresco, seco e protegido do sol. Conservar fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/detergente-clorado.jfif",
-    "name": "Detergente Clorado",
-    "description": ""
+    "name": "Detergente Clorado Lunnis 5L – Archote",
+    "description": "Descrição:\nO Detergente Clorado Lunnis 5L – Archote é um limpador com ação desengordurante e desinfetante, formulado com cloro ativo, ideal para higienização profunda de superfícies. Sua composição promove limpeza eficiente, removendo sujeiras difíceis, gorduras e manchas, além de auxiliar na eliminação de germes, bactérias e odores.\n\nAção:\n\nLimpeza profunda com cloro ativo\n\nAuxilia na desinfecção de superfícies\n\nRemove gordura, manchas e sujeiras incrustadas\n\nNeutraliza odores desagradáveis\n\nIndicação de Uso:\nRecomendado para:\n\nCozinhas industriais e residenciais\n\nÁreas de manipulação de alimentos\n\nPisos laváveis, azulejos e cerâmicas\n\nBanheiros, sanitários, vestiários\n\nAmbientes comerciais, condomínios e limpeza profissional\n\nCaracterísticas:\n\nFórmula com cloro ativo\n\nAlto poder de limpeza e branqueamento\n\nExcelente rendimento em uso diluído\n\nIdeal para uso profissional\n\nDiluição:\n\nLimpeza pesada: usar puro ou com baixa diluição\n\nLimpeza geral: diluir de 1:10 a 1:30, conforme a necessidade\n\nÁreas com manchas difíceis: deixar agir por alguns minutos antes de esfregar\n\nModo de Uso:\nAplicar o produto (puro ou diluído) sobre a superfície, esfregar com pano, escova ou mop e enxaguar bem após o uso.\n\nAtenção:\n\nNão misturar com ácidos ou produtos à base de amônia\n\nUsar luvas ao manusear\n\nEvitar contato com tecidos, pois pode causar descoloração\n\nVolume:\n5 Litros\n\nArmazenamento:\nManter fechado, em local fresco, ventilado e protegido da luz. Manter fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/detergente-ype.jfif",
-    "name": "Detergente Ypê",
-    "description": ""
+    "name": "Detergente Ypê Neutro 500 mL",
+    "description": "Descrição:\nO Detergente Ypê Neutro 500 mL é formulado para proporcionar limpeza eficiente com suavidade, removendo gorduras e sujeiras sem agredir as mãos e sem danificar superfícies. Sua fórmula neutra oferece alto rendimento e excelente desempenho tanto no uso doméstico quanto profissional.\n\nAção:\n\nRemove gordura com facilidade\n\nEspuma estável e de rápida ação\n\nLimpeza profunda sem agressividade\n\nIndicação de Uso:\nRecomendado para:\n\nLouças, talheres e utensílios de cozinha\n\nPlásticos, vidros, inox, cerâmicas e superfícies laváveis\n\nUso doméstico e comercial\n\nCaracterísticas:\n\nFórmula neutra, suave para as mãos\n\nAlto poder desengordurante\n\nRende mais com poucas gotas\n\nAroma suave e agradável\n\nProduto tradicional da linha Ypê, reconhecido pela qualidade\n\nModo de Uso:\nAplicar diretamente na esponja ou diluir em água, esfregar a superfície desejada e enxaguar em seguida.\n\nVolume:\n500 mL\n\nArmazenamento:\nConservar em local fresco, protegido da luz e longe do calor. Manter fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/esponja-antirrisco.jfif",
-    "name": "Esponja Antirrisco",
-    "description": ""
+    "name": "Esponja Antirrisco Azulim",
+    "description": "Descrição:\nA Esponja Antirrisco Azulim foi desenvolvida para proporcionar limpeza eficaz sem danificar superfícies sensíveis. Sua face macia remove sujeiras, gorduras e resíduos do dia a dia, enquanto o lado absorvente garante excelente rendimento e praticidade no uso doméstico e profissional.\n\nIndicação de Uso:\nIdeal para:\n\nPanelas com revestimento antiaderente\n\nUtensílios delicados\n\nLouças e copos\n\nVidros, plásticos e superfícies sensíveis\n\nLimpeza geral sem risco de arranhões\n\nCaracterísticas:\n\nSuperfície antirrisco, segura para materiais delicados\n\nMaior durabilidade e resistência\n\nEspuma macia com alta capacidade de absorção\n\nFácil de manusear e eficiente na remoção de sujeiras\n\nIndicada para uso diário em cozinhas e áreas de serviço\n\nModo de Uso:\nAplicar detergente ou limpador na esponja, esfregar suavemente a superfície e enxaguar após o uso.\n\nCuidados:\n\nNão utilizar em superfícies ásperas ou extremamente abrasivas\n\nEnxaguar bem após o uso e manter seca para prolongar a vida útil\n\nManter fora do alcance de crianças."
   },
   {
     "image": "images/products/esponsa.jfif",
-    "name": "Esponja",
-    "description": ""
+    "name": "Esponja Multiuso Condor – Com 4 Unidades",
+    "description": "Descrição:\nA Esponja Multiuso Condor é desenvolvida para limpeza eficiente em diversos tipos de superfícies, combinando lado abrasivo para sujeiras difíceis e lado macio para lavagem geral. Ideal para uso doméstico e profissional, garantindo praticidade, durabilidade e alto desempenho na remoção de gordura e resíduos.\n\nIndicação de Uso:\nRecomendada para:\n\nLouças, panelas e utensílios\n\nPias, azulejos e bancadas\n\nSuperfícies laváveis em geral\n\nCozinhas, áreas de serviço e limpeza cotidiana\n\nCaracterísticas:\n\nDupla ação: fibra abrasiva + espuma macia\n\nExcelente remoção de sujeira e gordura\n\nAlta durabilidade e resistência\n\nFormato anatômico para melhor pegada\n\nUso versátil e prático no dia a dia\n\nQualidade Condor, referência em limpeza doméstica\n\nModo de Uso:\nAplicar detergente ou limpador sobre a esponja, esfregar a superfície desejada e enxaguar após a limpeza.\n\nCuidados:\n\nNão utilizar o lado abrasivo em superfícies delicadas ou antiaderentes\n\nEnxaguar e espremer bem após o uso\n\nArmazenar em local seco para maior durabilidade\n\nManter fora do alcance de crianças\n\nApresentação:\nPacote com 4 unidades."
   },
   {
     "image": "images/products/flanelas.jfif",
-    "name": "Flanelas",
-    "description": ""
+    "name": "Flanela Laranja 38 x 58 cm – Unidade",
+    "description": "Descrição:\nA Flanela Laranja 38 x 58 cm é produzida em tecido macio e altamente absorvente, ideal para limpeza, polimento e remoção de poeira sem riscar superfícies. Versátil e durável, é recomendada para uso doméstico, automotivo e profissional.\n\nIndicação de Uso:\nIdeal para:\n\nLimpeza geral de móveis e superfícies\n\nPolimento automotivo\n\nRemoção de poeira\n\nAplicação e remoção de ceras e produtos de acabamento\n\nUso em vidros, plásticos, metais e superfícies sensíveis\n\nCaracterísticas:\n\nTecido macio, leve e superabsorvente\n\nNão risca e não solta fiapos\n\nExcelente desempenho para polimento\n\nFácil de lavar e reutilizar\n\nDimensões amplas: 38 cm x 58 cm\n\nCor: Laranja\n\nModo de Uso:\nUtilizar seca ou levemente umedecida, conforme a necessidade da limpeza. Após o uso, lavar com sabão neutro e deixar secar naturalmente.\n\nCuidados:\n\nNão utilizar com produtos abrasivos\n\nEvitar uso com alvejantes à base de cloro\n\nLavar separadamente de roupas coloridas\n\nManter seca e limpa após o uso."
   },
   {
     "image": "images/products/lavanda-suprema.jfif",
-    "name": "Lavanda Suprema",
-    "description": ""
+    "name": "Desinfetante Suprema Lavanda 5L",
+    "description": "Descrição:\nO Desinfetante Suprema Lavanda 5L é formulado para limpeza, higienização e perfumação prolongada de ambientes. Sua fragrância Lavanda proporciona sensação de frescor e bem-estar, enquanto sua ação desodorizante ajuda a eliminar odores desagradáveis, deixando o ambiente limpo por mais tempo.\n\nAção:\n\nLimpa e perfuma\n\nAuxilia na higienização de superfícies\n\nElimina odores e deixa fragrância duradoura\n\nIdeal para uso profissional ou doméstico\n\nIndicação de Uso:\nRecomendado para:\n\nPisos, azulejos e superfícies laváveis\n\nBanheiros, cozinhas, corredores e áreas comuns\n\nEstabelecimentos comerciais, condomínios e residências\n\nCaracterísticas:\n\nAroma intenso e agradável de Lavanda\n\nExcelente rendimento em uso diluído\n\nFórmula com ação desodorizante\n\nConsistência líquida, fácil de aplicar\n\nIdeal para limpeza diária\n\nDiluição:\n\nLimpeza geral: diluir conforme preferência, geralmente 1:10 a 1:50\n\nPerfumação leve: usar diluições maiores\n\nModo de Uso:\nAplicar o produto puro ou diluído sobre a superfície, espalhar com pano, mop ou rodo e deixar secar naturalmente. Não é necessário enxaguar (exceto em áreas de preparo de alimentos).\n\nVolume:\n5 Litros\n\nArmazenamento:\nConservar em local fresco, ventilado e protegido da luz. Manter fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/limpa-ceramicas-azulim.jfif",
-    "name": "Limpa Cerâmicas Azulim",
-    "description": ""
+    "name": "Limpa Cerâmicas Azulim 5L",
+    "description": "Descrição:\nO Limpa Cerâmicas Azulim 5L é um limpador de alta performance desenvolvido especialmente para a higienização profunda de pisos cerâmicos, porcelanatos rústicos, lajotas e superfícies similares. Sua fórmula potente remove sujeiras difíceis, encardido, marcas de trânsito, fuligem e resíduos acumulados, devolvendo o brilho natural da cerâmica.\n\nAção:\n\nRemove encardido e sujeiras impregnadas\n\nDissolve resíduos de gordura, poeira intensa e manchas leves\n\nRestaura a aparência original da cerâmica\n\nAlto rendimento em uso diluído\n\nIndicação de Uso:\nIdeal para:\n\nPisos cerâmicos internos e externos\n\nLajotas e revestimentos rústicos\n\nÁreas de grande circulação\n\nComércios, condomínios, residências e ambientes profissionais\n\nCaracterísticas:\n\nAção desengordurante e desincrustante\n\nFórmula eficaz para limpeza pesada\n\nResultados visíveis já na primeira aplicação\n\nPode ser utilizado puro ou diluído\n\nFácil aplicação\n\nDiluição:\n\nLimpeza pesada: usar puro ou diluir até 1:5\n\nLimpeza geral: diluir de 1:10 a 1:20 conforme necessidade\n\nModo de Uso:\nAplicar sobre a superfície, deixar agir por alguns minutos, esfregar com vassoura ou mop e enxaguar.\nRecomenda-se testar em uma pequena área antes da aplicação total.\n\nAtenção:\n\nNão indicado para mármore, granito, pisos vitrificados ou delicados\n\nUtilizar luvas durante o manuseio\n\nEvitar contato prolongado com metais\n\nVolume:\n5 Litros\n\nArmazenamento:\nGuardar em local fresco, protegido da luz e fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/limpa-pedra.jfif",
-    "name": "Limpa Pedra",
-    "description": ""
+    "name": "Limpa Pedra Clean UP 5L",
+    "description": "Descrição:\nO Limpa Pedra Clean UP 5L é um limpador desincrustante de alta eficiência, formulado para remover sujeiras pesadas, encardidos, manchas e resíduos de obras em superfícies minerais. Ideal para a manutenção e recuperação de pedras naturais e artificiais, devolvendo a aparência original do material.\n\nAção:\n\nRemove encardido e sujeiras impregnadas\n\nDissolve incrustações, limo, resíduos de terra e marcas de trânsito\n\nAuxilia na remoção de manchas provocadas por umidade e sujeira acumulada\n\nLimpeza profunda com excelente rendimento\n\nIndicação de Uso:\nRecomendado para:\n\nPedras naturais e rústicas (ardósia, pedra mineira, miracema, são tomé etc.)\n\nPisos externos, quintais, calçadas e áreas abertas\n\nLajes e superfícies expostas ao tempo\n\nAmbientes comerciais, industriais e residenciais\n\nCaracterísticas:\n\nFórmula desincrustante de alta performance\n\nResultados rápidos e visíveis já na primeira aplicação\n\nIdeal para limpeza pesada\n\nPode ser utilizado puro ou diluído\n\nFácil aplicação e ótimo rendimento\n\nDiluição:\n\nLimpeza pesada: usar puro ou diluir até 1:3\n\nLimpeza geral: diluir entre 1:5 e 1:10, conforme o nível de sujeira\n\nModo de Uso:\nAplicar o produto sobre a superfície, deixar agir por alguns minutos, esfregar com vassoura ou escova e enxaguar abundantemente.\nRecomenda-se testar em pequena área antes da aplicação total.\n\nAtenção:\n\nNão utilizar em mármore, granito polido, porcelanato, cerâmica vitrificada ou superfícies sensíveis a ácidos\n\nUtilizar luvas e evitar respingos\n\nNão misturar com outros produtos químicos\n\nVolume:\n5 Litros\n\nArmazenamento:\nConservar em local fresco, ventilado e protegido da luz. Manter fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/limpa-vidros-suprema.jfif",
-    "name": "Limpa Vidros Suprema",
-    "description": ""
+    "name": "Limpa Vidros Suprema 500 mL",
+    "description": "Descrição:\nO Limpa Vidros Suprema 500 mL é um limpador formulado para proporcionar brilho, transparência e remoção eficiente de marcas em superfícies de vidro. Sua composição rápida e eficaz elimina sujeiras, gordura, poeira, marcas de dedos e respingos, deixando o vidro limpo e sem embaçar.\n\nAção:\n\nRemove sujeiras leves e gordurosas\n\nGarante brilho imediato e transparência\n\nSeca rápido e não deixa manchas\n\nReduz o embaçamento temporário\n\nIndicação de Uso:\nIdeal para:\n\nVidros e janelas\n\nEspelhos\n\nMesas e tampos de vidro\n\nBox de banheiro\n\nSuperfícies lisas, acrílicas e esmaltadas\n\nCaracterísticas:\n\nFórmula com ação desengordurante\n\nNão deixa resíduos\n\nFácil aplicação com borrifador\n\nFragrância suave\n\nUso doméstico e profissional\n\nModo de Uso:\nBorrifar o produto diretamente sobre a superfície e espalhar com pano seco, flanela ou papel absorvente até obter brilho.\nPara sujeiras mais difíceis, repetir a aplicação.\n\nVolume:\n500 mL\n\nArmazenamento:\nConservar em local fresco, protegido da luz e bem ventilado. Manter fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/lustra-moveis-bry-jasmim.jfif",
-    "name": "Lustra Móveis BRY Jasmim",
-    "description": ""
+    "name": "Lustra Móveis BRY Jasmim 200 mL",
+    "description": "Descrição:\nO Lustra Móveis BRY Jasmim 200 mL é formulado para limpar, proteger e realçar o brilho de superfícies de madeira. Sua composição remove poeira, manchas leves e marcas de uso, deixando um acabamento renovado e uma fragrância suave de Jasmim. Ideal para manter móveis sempre bem cuidados e com aparência de novos.\n\nAção:\n\nLimpa e remove pó\n\nRealça o brilho natural da madeira\n\nCria uma película protetora contra sujeira e desgaste\n\nDeixa fragrância agradável e duradoura\n\nIndicação de Uso:\nRecomendado para:\n\nMóveis de madeira envernizados ou laqueados\n\nSuperfícies laminadas e fórmicas\n\nPainéis, rodapés e objetos decorativos\n\nUso doméstico e profissional\n\nCaracterísticas:\n\nFórmula suave e eficiente\n\nProtege contra riscos leves e ação do tempo\n\nPerfume de Jasmim, deixando sensação de frescor\n\nFácil de aplicar e espalhar\n\nAcabamento brilhante sem engordurar\n\nModo de Uso:\nAplicar uma pequena quantidade em um pano limpo e macio, espalhar uniformemente sobre a superfície e lustrar até obter brilho desejado.\n\nVolume:\n200 mL\n\nArmazenamento:\nConservar tampado, em local fresco, longe do sol e fora do alcance de crianças e animais."
   },
   {
     "image": "images/products/lustra-moveis-fuzeto.jfif",
-    "name": "Lustra Móveis Fuzeto",
-    "description": ""
+    "name": "Lustra Móveis Brilho Total Fuzetto",
+    "description": "Descrição:\nO Lustra Móveis Brilho Total Fuzetto foi desenvolvido para limpar, proteger e renovar superfícies de madeira, proporcionando brilho intenso e duradouro. Sua fórmula cria uma película protetora que reduz o acúmulo de poeira, minimiza riscos leves e mantém os móveis com aparência sempre nova.\n\nAção:\n\nRealça o brilho natural da madeira\n\nRemove poeira e manchas leves\n\nForma camada protetora contra sujeira e desgaste\n\nDeixa fragrância suave e agradável\n\nIndicação de Uso:\nIdeal para:\n\nMóveis de madeira envernizados\n\nSuperfícies laminadas ou laqueadas\n\nObjetos decorativos, painéis e rodapés\n\nUso doméstico e profissional\n\nCaracterísticas:\n\nAcabamento com brilho intenso\n\nFórmula eficiente e fácil de aplicar\n\nNão mancha e não engordura\n\nProtege contra desgaste do dia a dia\n\nMantém a superfície limpa por mais tempo\n\nModo de Uso:\nAplicar uma pequena quantidade em um pano macio, espalhar sobre a superfície e lustrar até obter o brilho desejado."
   },
   {
     "image": "images/products/lustra-moveis-uau-perfumes.jfif",
-    "name": "Lustra Móveis UAU Perfumes",
-    "description": ""
+    "name": "Lustra Móveis UAU Perfumes 200 mL",
+    "description": "Descrição:\nO Lustra Móveis UAU Perfumes 200 mL é formulado para limpar, proteger e dar brilho às superfícies de madeira, deixando um acabamento renovado e perfumado. Sua ação antipoeira ajuda a manter os móveis limpos por mais tempo, enquanto sua fragrância da linha UAU Perfumes proporciona um aroma sofisticado e agradável ao ambiente.\n\nAção:\n\nRemove poeira e sujeiras leves\n\nRealça o brilho natural da madeira\n\nCria película protetora contra desgaste\n\nPerfuma o ambiente com fragrância prolongada\n\nIndicação de Uso:\nIdeal para:\n\nMóveis envernizados\n\nSuperfícies laqueadas ou laminadas\n\nPainéis, racks, mesas, aparadores e estantes\n\nUso doméstico ou profissional\n\nCaracterísticas:\n\nAcabamento uniforme e sem engordurar\n\nReduz o acúmulo de poeira\n\nAção de brilho imediato\n\nTextura cremosa e fácil de aplicar\n\nFragrância sofisticada da linha UAU Perfumes\n\nModo de Uso:\nAplicar o produto em um pano macio e limpo, espalhar sobre a superfície e lustrar até obter o brilho desejado."
   },
   {
     "image": "images/products/luva-pvc.jfif",
-    "name": "Luva PVC",
-    "description": ""
+    "name": "Luva Luva Silver Amarela Nobre ",
+    "description": "Descrição:\nA Luva Silver Amarela Nobre é produzida em látex de alta qualidade, oferecendo resistência, conforto e segurança para atividades de limpeza em geral. Seu interior flocado facilita o uso prolongado, evitando desconfortos e aumentando a proteção das mãos durante tarefas domésticas ou profissionais.\n\nAção / Finalidade:\n\nProtege as mãos contra produtos químicos domésticos\n\nReduz o risco de irritações e contato direto com sujeiras\n\nOferece firmeza e aderência em superfícies molhadas\n\nIdeal para uso contínuo em rotinas de limpeza\n\nIndicação de Uso:\nRecomendada para:\n\nLimpeza doméstica e profissional\n\nManipulação de produtos de limpeza\n\nServiços gerais\n\nAtividades que exigem proteção básica das mãos\n\nCaracterísticas:\n\nMaterial: Látex natural resistente\n\nInterior flocado (maior conforto e absorção de suor)\n\nPalma antiderrapante para melhor pegada\n\nComprimento ideal para proteção do antebraço\n\nDurável, flexível e anatômica\n\nDisponível nos tamanhos P, M e G\n\nCores:\nAmarelo (linha Silver)\n\nModo de Conservação:\nLavar após o uso, secar à sombra e guardar em local fresco. Evitar contato com solventes fortes e fontes de calor."
   },
   {
     "image": "images/products/luvas-pvc.jfif",
-    "name": "Luvas PVC",
-    "description": ""
+    "name": "Luva Sanro Top Amarela ",
+    "description": "Descrição:\nA Luva Sanro Top Amarela é desenvolvida em látex de alta resistência, oferecendo proteção, durabilidade e conforto para tarefas de limpeza doméstica ou profissional. Seu interior flocado proporciona mais maciez e absorção do suor, evitando desconforto durante o uso prolongado.\n\nAção / Finalidade:\n\nProteção das mãos contra produtos químicos domésticos\n\nRedução de irritações e contato direto com sujeira\n\nMaior segurança em superfícies úmidas graças à textura antiderrapante\n\nIdeal para rotinas de limpeza que exigem proteção moderada\n\nIndicação de Uso:\nRecomendada para:\n\nLimpeza doméstica pesada ou leve\n\nLimpeza profissional e serviços gerais\n\nManuseio de produtos químicos de uso comum\n\nAtividades que exigem aderência e proteção básica das mãos\n\nCaracterísticas:\n\nMaterial: Látex natural reforçado\n\nInterior flocado para maior conforto\n\nPalma e dedos antiderrapantes\n\nLeve, flexível e anatômica\n\nBoa durabilidade em uso diário\n\nDisponível nos tamanhos P, M e G\n\nCor:\nAmarelo (linha Top Sanro)\n\nConservação:\nLavar após o uso, secar à sombra e manter em local fresco. Evitar exposição prolongada ao sol ou contato com solventes fortes."
   },
   {
     "image": "images/products/nobre-400-folhas.jfif",
-    "name": "Nobre 400 Folhas",
-    "description": ""
+    "name": "Papel Interfolha Nobre – 4.800 Folhas",
+    "description": "Descrição:\nO Papel Interfolha Nobre é produzido com fibras de alta qualidade, garantindo excelente absorção, resistência e maciez. Indicado para uso em dispensers, oferece maior higiene, controle de consumo e praticidade no dia a dia, ideal para ambientes com grande circulação de pessoas.\n\nAção / Finalidade:\n\nSecagem eficiente das mãos\n\nHigienização rápida e prática\n\nRedução de desperdício graças ao sistema interfolhado (folha sai por vez)\n\nIndicação de Uso:\nPerfeito para:\n\nEmpresas\n\nRestaurantes\n\nBanheiros comerciais\n\nConsultórios\n\nEscolas\n\nCondomínios\n\nAmbientes com fluxo médio a alto de usuários\n\nCaracterísticas:\n\nContém 4.800 folhas\n\nPapel interfolhado (sistema folha a folha)\n\nMaior higiene no uso\n\nAlta absorção e boa resistência\n\nCompatível com diversos modelos de dispenser\n\nProduto econômico e versátil\n\nCor:\nBranco (dependendo da linha Nobre)\n\nMaterial:\nCelulose de qualidade superior (pode variar entre fibras 100% celulose ou mistas, conforme lote e linha da marca)."
   },
   {
     "image": "images/products/pa-cabo-longo.jfif",
     "name": "Pá Cabo Longo",
-    "description": ""
+    "description": "Descrição:\nA Pá de Cabo Longo é desenvolvida para facilitar a coleta de resíduos sólidos em ambientes internos e externos, permitindo que o usuário trabalhe sem precisar se abaixar. Fabricada com materiais resistentes, proporciona maior ergonomia, higiene e agilidade na limpeza diária.\n\nAção / Finalidade:\n\nColeta prática de lixo, poeira e resíduos\n\nIdeal para uso em conjunto com vassouras de diversos modelos\n\nReduz esforço físico graças ao cabo alongado\n\nIndicação de Uso:\nRecomendada para:\n\nLimpeza doméstica\n\nComércios e empresas\n\nCondomínios\n\nEscolas, clínicas e escritórios\n\nServiços de limpeza profissional\n\nCaracterísticas:\n\nCabo longo ergonômico, permitindo postura confortável\n\nEstrutura leve e durável\n\nPá com borda alinhada para facilitar a coleta de resíduos\n\nIdeal para uso contínuo em rotinas de limpeza\n\nDisponível em diferentes cores conforme fabricante\n\nMaterial:\nPlástico resistente (pá) e cabo em madeira, conforme modelo."
   },
   {
     "image": "images/products/pa.jfif",
-    "name": "Pá",
-    "description": ""
+    "name": "Pá de Plástico",
+    "description": "Descrição:\nA Pá de Plástico é um utensílio leve e resistente, desenvolvido para facilitar a coleta de resíduos sólidos, poeira e sujeiras diversas. Ideal para uso doméstico, comercial ou profissional, garante praticidade e eficiência no dia a dia da limpeza.\n\nAção / Finalidade:\n\nColeta de lixo, poeira e pequenos resíduos\n\nAuxilia na varrição e manutenção da limpeza de ambientes\n\nUso em conjunto com vassouras de diferentes modelos\n\nIndicação de Uso:\nRecomendada para:\n\nCasas e apartamentos\n\nCondomínios\n\nEscritórios e comércios\n\nEscolas, clínicas e áreas comuns\n\nSetores de limpeza profissional\n\nCaracterísticas:\n\nFabricada em plástico rígido e resistente\n\nLeve e fácil de manusear\n\nBorda plana para melhor recolhimento da sujeira\n\nDesign funcional e ergonômico\n\nFácil de lavar e armazenar\n\nDisponível em diversas cores, conforme fabricante\n\nMaterial:\nPlástico de alta durabilidade."
   },
   {
     "image": "images/products/pacote-luva-pcv.jfif",
-    "name": "Pacote Luva PCV",
-    "description": ""
+    "name": "Luva de Látex Sanro Amarela – Tamanhos P, M e G",
+    "description": "Descrição:\nA Luva de Látex Sanro Amarela é produzida em látex natural de alta resistência, garantindo proteção, durabilidade e conforto durante atividades de limpeza doméstica ou profissional. Possui interior flocado, que proporciona maciez e reduz o acúmulo de suor, permitindo uso prolongado sem desconforto.\n\nAção / Finalidade:\n\nProteção das mãos contra produtos químicos domésticos\n\nEvita contato direto com sujeiras e umidade\n\nOferece aderência em superfícies molhadas através da textura antiderrapante\n\nIndicação de Uso:\nIndicada para:\n\nLimpeza doméstica e profissional\n\nServiços gerais\n\nManipulação de produtos de limpeza\n\nAtividades que exigem proteção moderada das mãos\n\nCaracterísticas:\n\nMaterial: Látex natural de alta qualidade\n\nInterior flocado (conforto e absorção de suor)\n\nPalma e dedos texturizados para melhor pegada\n\nFlexível, resistente e anatômica\n\nIdeal para uso contínuo\n\nDisponível nos tamanhos P, M e G\n\nCor:\nAmarela (linha Sanro)\n\nCuidados e Conservação:\nLavar após o uso, secar à sombra e armazenar em local fresco. Evitar contato com solventes agressivos e exposição direta ao calor."
   },
   {
     "image": "images/products/paninho-de-micro-fibra.jfif",
-    "name": "Paninho de Microfibra",
-    "description": ""
+    "name": "Pano em Microfibra 35x55",
+    "description": "Descrição:\nO Pano em Microfibra 35x55 é desenvolvido com fibras ultrafinas de alta performance, garantindo excelente poder de absorção e remoção de sujeira. Ideal para limpeza doméstica ou profissional, proporciona resultado eficiente sem riscar superfícies, podendo ser usado seco ou úmido.\n\nAção / Finalidade:\n\nAlta capacidade de absorção e retenção de partículas\n\nRemove poeira, gordura e resíduos sem necessidade de produtos químicos (quando desejado)\n\nNão risca e não solta fiapos\n\nExcelente desempenho em superfícies lisas\n\nIndicação de Uso:\nRecomendado para limpeza de:\n\nVidros e espelhos\n\nMóveis e eletrônicos\n\nCozinha e superfícies inox\n\nAutomóveis\n\nAmbientes domésticos e profissionais\n\nCaracterísticas:\n\nDimensões: 35 x 55 cm\n\nToque macio e alta durabilidade\n\nSecagem rápida\n\nMaterial leve, flexível e reutilizável\n\nPode ser lavado diversas vezes sem perder eficiência\n\nIdeal para limpeza úmida ou a seco\n\nMaterial:\nMicrofibra (poliéster + poliamida)."
   },
   {
     "image": "images/products/pano-de-chao.jfif",
-    "name": "Pano de Chão",
-    "description": ""
+    "name": "Pano de Chão Alvejado Reforçado",
+    "description": "Descrição:\nO Pano de Chão Alvejado é fabricado em tecido 100% algodão, passando por processo de alvejamento que garante maior higiene, maciez e capacidade de absorção. É ideal para limpeza pesada e manutenção diária de diferentes tipos de pisos, oferecendo excelente rendimento e durabilidade.\n\nAção / Finalidade:\n\nAbsorve líquidos com eficiência\n\nRemove sujeiras e resíduos de forma prática\n\nIndicado para uso em limpeza úmida ou com produtos químicos\n\nIdeal para serviços gerais e manutenção de pisos\n\nIndicação de Uso:\nRecomendado para:\n\nAmbientes domésticos\n\nEmpresas e comércios\n\nCondomínios\n\nEscolas, clínicas e escritórios\n\nSetores de limpeza profissional\n\nCaracterísticas:\n\nTecido alvejado de alta absorção\n\nAlta resistência e boa durabilidade\n\nNão solta fiapos durante o uso\n\nIdeal para lavagens repetidas\n\nMacio e fácil de torcer\n\nCompatível com baldes espremedores e rodos diversos\n\nMaterial:\n100% algodão alvejado."
   },
   {
     "image": "images/products/pano-de-chao002.jfif",
-    "name": "Pano de Chão",
-    "description": ""
+    "name": "Pano de Chão Xadrez",
+    "description": "Descrição:\nO Pano de Chão Xadrez é confeccionado em tecido resistente e de alta absorção, ideal para limpeza pesada e manutenção diária de pisos. Sua trama reforçada com estampa xadrez proporciona durabilidade, praticidade e ótimo desempenho na remoção de sujeiras e líquidos.\n\nAção / Finalidade:\n\nAbsorção eficiente de líquidos\n\nRemoção prática de resíduos e sujeiras\n\nIndicado para limpeza úmida e uso com produtos químicos\n\nIdeal para rotinas de limpeza pesada\n\nIndicação de Uso:\nRecomendado para:\n\nResidências\n\nCondomínios\n\nEstabelecimentos comerciais\n\nEmpresas e escritórios\n\nAmbientes que exigem limpeza frequente\n\nSetor de limpeza profissional\n\nCaracterísticas:\n\nTrama reforçada e resistente\n\nAlta durabilidade mesmo com lavagens frequentes\n\nExcelente absorção\n\nFácil de torcer e manusear\n\nNão solta fiapos com facilidade\n\nEstampa xadrez tradicional, que facilita identificação e uso\n\nMaterial:\nTecido composto (normalmente algodão misto com fibras sintéticas, podendo variar conforme o fabricante)."
   },
   {
     "image": "images/products/pano-multi-uso.jfif",
-    "name": "Pano Multi-uso",
-    "description": ""
+    "name": "Pano Multiuso Perflex c/ 600 Panos – Inoven",
+    "description": "Descrição:\nO Pano Multiuso Perflex Inoven é desenvolvido em material não tecido (TNT) de alta resistência e absorção, ideal para limpezas rápidas, práticas e higiênicas. Embalado em rolo com 600 panos destacáveis, oferece ótimo rendimento e economia para ambientes com grande fluxo de uso ou para equipes profissionais de limpeza.\n\nAção / Finalidade:\n\nLimpeza geral de superfícies\n\nAbsorção eficiente de líquidos e remoção de sujeiras\n\nSubstitui panos tradicionais com maior higiene (uso descartável)\n\nAjuda a reduzir contaminação cruzada\n\nIndicação de Uso:\nRecomendado para:\n\nCozinhas industriais e comerciais\n\nEscritórios e empresas\n\nClínicas, consultórios e ambientes hospitalares (uso não estéril)\n\nResidências\n\nSetor de limpeza profissional\n\nManutenção de rotina em superfícies diversas\n\nCaracterísticas:\n\nContém 600 panos no rolo\n\nPanos destacáveis e prontos para uso\n\nMaterial: TNT (tecido não tecido)\n\nAlta absorção e resistência\n\nTextura que facilita a remoção de sujeira\n\nUso descartável, mais higiênico\n\nIdeal para superfícies lisas, móveis, pisos e equipamentos\n\nVantagens:\n\nEconômico: grande quantidade no rolo\n\nPrático: destaca e usa\n\nHigiênico: reduz risco de proliferação de bactérias\n\nVersátil para diversos tipos de limpeza."
   },
   {
     "image": "images/products/papel-higienico.jfif",
-    "name": "Papel Higiênico",
-    "description": ""
+    "name": "Papel Higiênico Best – 12 Rolos com 20m",
+    "description": "Descrição:\nO Papel Higiênico Best é produzido com fibras de qualidade que garantem maciez, resistência e conforto no uso diário. Com embalagem econômica contendo 12 rolos de 20 metros cada, é ideal para residências, empresas e estabelecimentos que buscam um produto eficiente e de bom rendimento.\n\nAção / Finalidade:\n\nHigiene pessoal com toque suave\n\nDesenrola com facilidade\n\nIdeal para uso contínuo em sanitários de baixo e médio fluxo\n\nIndicação de Uso:\nRecomendado para:\n\nResidências\n\nEscritórios e comércios\n\nCondomínios\n\nBanheiros de uso geral\n\nCaracterísticas:\n\nEmbalagem: 12 rolos\n\nComprimento por rolo: 20 metros\n\nPapel branco e macio\n\nBom rendimento para uso diário\n\nFácil desenrolamento\n\nCompatível com porta-rolos comuns\n\nMaterial:\nFibras de celulose (pode variar conforme lote)."
   },
   {
     "image": "images/products/papel-toalha.jfif",
-    "name": "Papel Toalha",
-    "description": ""
+    "name": "Papel Interfolhas Status Luxo – 4.800 Folhas",
+    "description": "Descrição:\nO Papel Interfolhas Status Luxo é desenvolvido com fibras de alta qualidade, proporcionando excelente maciez, resistência e absorção. Ideal para ambientes que exigem higiene, praticidade e controle de consumo, seu sistema interfolhado garante que o usuário retire apenas uma folha por vez, evitando desperdícios.\n\nAção / Finalidade:\n\nSecagem eficiente das mãos\n\nHigienização rápida e segura\n\nRedução do desperdício graças ao sistema folha a folha\n\nIndicação de Uso:\nRecomendado para:\n\nEscritórios e empresas\n\nRestaurantes e lanchonetes\n\nConsultórios e clínicas\n\nEscolas\n\nBanheiros corporativos e comerciais\n\nLocais com médio e alto fluxo de pessoas\n\nCaracterísticas:\n\nContém 4.800 folhas\n\nPapel interfolhado (alto controle de consumo)\n\nMaciez superior e boa resistência\n\nExcelente absorção\n\nCompatível com dispensers padrão\n\nIdeal para sanitários e áreas de higienização\n\nCor:\nBranco (linha Luxo)."
   },
   {
     "image": "images/products/pasta-de-brilho-aluminio.jfif",
-    "name": "Pasta de Brilho Alumínio",
-    "description": ""
+    "name": "Pasta de Brilho Alumínio Alumil – 500g",
+    "description": "Descrição:\nA Pasta de Brilho Alumínio Alumil é um produto de alta performance desenvolvido para limpar, polir e restaurar superfícies de alumínio. Sua fórmula concentrada remove manchas, oxidação leve e sujeiras incrustadas, devolvendo o brilho original ao metal com rapidez e eficiência.\n\nAção / Finalidade:\n\nLimpeza profunda de superfícies de alumínio\n\nRestauração do brilho original\n\nRemoção de resíduos, manchas e oxidações leves\n\nPolimento e proteção do material\n\nIndicação de Uso:\nRecomendada para:\n\nPanelas e utensílios domésticos de alumínio\n\nPeças automotivas\n\nBarras, objetos e estruturas metálicas\n\nEstabelecimentos comerciais, cozinhas industriais e residências\n\nCaracterísticas:\n\nPeso líquido: 500g\n\nTextura cremosa de fácil aplicação\n\nAlto poder de limpeza e brilho\n\nRendimento elevado\n\nRemove sujeira e opacidade sem danificar o metal\n\nPode ser utilizada com pano ou esponja apropriada\n\nVantagens:\n\nBrilho intenso e duradouro\n\nAge rapidamente\n\nProduto versátil para diferentes tipos de alumínio\n\nEmbalagem prática para uso profissional ou doméstico\n\nModo de Uso (geral):\nAplicar a pasta sobre a superfície limpa, esfregar com pano ou esponja, enxaguar e secar para melhor acabamento (seguir recomendações do fabricante)."
   },
   {
     "image": "images/products/pato-limpeza-profunda.jfif",
-    "name": "Pato Limpeza Profunda",
-    "description": ""
+    "name": "Pato Purific c/ Bico",
+    "description": "Descrição:\nO Pato Purific com Bico é um limpador sanitário desenvolvido para higienizar, perfumar e eliminar sujeiras das regiões internas do vaso sanitário, inclusive áreas de difícil alcance. Seu bico aplicador curvado permite aplicação precisa sob a borda, garantindo limpeza profunda e ação eficiente.\n\nAção / Finalidade:\n\nLimpeza e desinfecção do vaso sanitário\n\nRemoção de manchas, resíduos e encardidos\n\nPerfuma e deixa sensação de frescor prolongado\n\nFacilita a higienização em áreas inacessíveis com escova comum\n\nIndicação de Uso:\nIdeal para:\n\nBanheiros residenciais\n\nAmbientes comerciais\n\nSanitários coletivos\n\nLimpeza profissional\n\nCaracterísticas:\n\nBico aplicador curvado (alcança a parte interna da borda)\n\nProduto pronto para uso\n\nAção desodorizante e higienizante\n\nTextura viscosa que adere melhor à superfície\n\nRendimento ideal para limpezas diárias ou periódicas\n\nVantagens:\n\nAplicação prática e direcionada\n\nMaior cobertura e eficiência\n\nPerfume agradável\n\nMelhora a higiene e manutenção do banheiro"
   },
   {
     "image": "images/products/pedra-sanitaria-azulim-acao-bacteriostatica.jfif",
-    "name": "Pedra Sanitária Azulim Ação Bacteriostática",
-    "description": ""
+    "name": "Pedra Sanitária Azulim Ação Bacteriostática – 25g",
+    "description": "Descrição:\nA Pedra Sanitária Azulim Ação Bacteriostática 25g foi desenvolvida para manter o vaso sanitário limpo, perfumado e protegido por mais tempo. Sua fórmula contém ação bacteriostática, que ajuda a inibir a proliferação de bactérias, garantindo mais higiene no banheiro a cada descarga.\n\nAção / Finalidade:\n\nPerfuma o ambiente continuamente\n\nLibera agentes de limpeza a cada descarga\n\nReduz o acúmulo de sujeira e manchas\n\nAjuda a inibir proliferação bacteriana (ação bacteriostática)\n\nIndicação de Uso:\nIdeal para:\n\nBanheiros residenciais\n\nAmbientes comerciais\n\nSanitários de uso coletivo\n\nManutenção contínua do vaso sanitário\n\nCaracterísticas:\n\nPeso: 25g\n\nAção bacteriostática\n\nPerfume agradável e duradouro\n\nCor azul, que indica ação no momento da descarga\n\nFácil instalação no interior da caixa acoplada ou suporte lateral (conforme modelo)\n\nEconomia e praticidade no dia a dia\n\nVantagens:\n\nManutenção contínua da higiene\n\nReduz mau odor\n\nPraticidade: basta instalar e deixar agir\n\nBom rendimento para uso diário."
   },
   {
     "image": "images/products/pedra-sanitaria-azulim-floral.jfif",
-    "name": "Pedra Sanitária Azulim Floral",
-    "description": ""
+    "name": "Pedra Sanitária Azulim Ação Bacteriostática – 25g Floral",
+    "description": "Descrição:\nA Pedra Sanitária Azulim Ação Bacteriostática 25g foi desenvolvida para manter o vaso sanitário limpo, perfumado e protegido por mais tempo. Sua fórmula contém ação bacteriostática, que ajuda a inibir a proliferação de bactérias, garantindo mais higiene no banheiro a cada descarga.\n\nAção / Finalidade:\n\nPerfuma o ambiente continuamente\n\nLibera agentes de limpeza a cada descarga\n\nReduz o acúmulo de sujeira e manchas\n\nAjuda a inibir proliferação bacteriana (ação bacteriostática)\n\nIndicação de Uso:\nIdeal para:\n\nBanheiros residenciais\n\nAmbientes comerciais\n\nSanitários de uso coletivo\n\nManutenção contínua do vaso sanitário\n\nCaracterísticas:\n\nPeso: 25g\n\nAção bacteriostática\n\nPerfume agradável e duradouro\n\nCor azul, que indica ação no momento da descarga\n\nFácil instalação no interior da caixa acoplada ou suporte lateral (conforme modelo)\n\nEconomia e praticidade no dia a dia\n\nVantagens:\n\nManutenção contínua da higiene\n\nReduz mau odor\n\nPraticidade: basta instalar e deixar agir\n\nBom rendimento para uso diário"
   },
   {
     "image": "images/products/pedra-sanitaria-lipex.jfif",
     "name": "Pedra Sanitária Lipex",
-    "description": ""
+    "description": "Descrição:\nA Pedra Sanitária Lipex foi desenvolvida para manter o vaso sanitário limpo, perfumado e higienizado por mais tempo. Sua fórmula ativa libera fragrância e agentes de limpeza a cada descarga, ajudando a reduzir odores e a manter o vaso com aparência de limpeza contínua.\n\nAção / Finalidade:\n\nPerfuma o ambiente de forma constante\n\nLibera agentes de limpeza a cada descarga\n\nAjuda a reduzir o acúmulo de sujeiras\n\nMantém o vaso sanitário higienizado por mais tempo\n\nIndicação de Uso:\nIdeal para:\n\nBanheiros residenciais\n\nBanheiros comerciais\n\nAmbientes de uso coletivo\n\nManutenção diária da higiene do vaso sanitário\n\nCaracterísticas:\n\nProduto de fácil instalação\n\nAroma duradouro e agradável\n\nAção contínua a cada descarga\n\nMantém o vaso limpo e com aparência de cuidado diário\n\nDisponível em diferentes fragrâncias (conforme fabricante)\n\nVantagens:\n\nPraticidade no uso\n\nReduz mau odor\n\nMelhora a sensação de limpeza do banheiro\n\nEconômica e eficaz no dia a dia."
   },
   {
     "image": "images/products/pedra-sanitaria.jfif",
-    "name": "Pedra Sanitária",
-    "description": ""
+    "name": "Pedra Sanitária Azulim Ação Bacteriostática – 25g Jasmin",
+    "description": "Descrição:\nA Pedra Sanitária Azulim Ação Bacteriostática 25g foi desenvolvida para manter o vaso sanitário limpo, perfumado e protegido por mais tempo. Sua fórmula contém ação bacteriostática, que ajuda a inibir a proliferação de bactérias, garantindo mais higiene no banheiro a cada descarga.\n\nAção / Finalidade:\n\nPerfuma o ambiente continuamente\n\nLibera agentes de limpeza a cada descarga\n\nReduz o acúmulo de sujeira e manchas\n\nAjuda a inibir proliferação bacteriana (ação bacteriostática)\n\nIndicação de Uso:\nIdeal para:\n\nBanheiros residenciais\n\nAmbientes comerciais\n\nSanitários de uso coletivo\n\nManutenção contínua do vaso sanitário\n\nCaracterísticas:\n\nPeso: 25g\n\nAção bacteriostática\n\nPerfume agradável e duradouro\n\nCor azul, que indica ação no momento da descarga\n\nFácil instalação no interior da caixa acoplada ou suporte lateral (conforme modelo)\n\nEconomia e praticidade no dia a dia\n\nVantagens:\n\nManutenção contínua da higiene\n\nReduz mau odor\n\nPraticidade: basta instalar e deixar agir\n\nBom rendimento para uso diário"
   },
   {
     "image": "images/products/placa-sinalizacao-piso-molhado.jfif",
     "name": "Placa Sinalização Piso Molhado",
-    "description": ""
+    "description": "Descrição:\nA Placa de Sinalização Piso Molhado é um item essencial para segurança em ambientes internos e externos. Fabricada em material resistente e de alta visibilidade, serve para alertar usuários sobre superfícies molhadas, reduzindo riscos de escorregões e acidentes. Leve e dobrável, é prática para transportar, posicionar e armazenar.\n\nAção / Finalidade:\n\nSinalizar áreas com risco de escorregamento\n\nAlertar sobre pisos molhados durante ou após a limpeza\n\nPrevenir acidentes e garantir segurança dos usuários\n\nIndicação de Uso:\nIdeal para:\n\nEmpresas e comércios\n\nCondomínios\n\nRestaurantes e cozinhas\n\nEscolas, clínicas e hospitais\n\nÁreas de limpeza profissional\n\nAmbientes com grande circulação de pessoas\n\nCaracterísticas:\n\nCor geralmente amarela para alta visibilidade\n\nImpressão frontal e traseira “Piso Molhado” ou “Caution Wet Floor” (dependendo do modelo)\n\nEstrutura dobrável, fácil de transportar e armazenar\n\nMaterial: plástico resistente e leve\n\nExcelente estabilidade ao ser apoiada no chão\n\nAltamente visível a longas distâncias\n\nResistente a água e produtos de limpeza\n\nVantagens:\n\nReduz riscos de acidentes\n\nFácil de manusear\n\nIdeal para protocolos de segurança e limpeza\n\nDurável e de baixo custo de manutenção."
   },
   {
     "image": "images/products/removedor-multi-uso.jfif",
-    "name": "Removedor Multi-uso",
-    "description": ""
+    "name": "Removedor Multiuso Suprema – 1L",
+    "description": "Descrição:\nO Removedor Multiuso Suprema 1L é um produto formulado para remover sujeiras pesadas, gorduras, manchas e resíduos aderidos em diversas superfícies. Sua ação solvente facilita a limpeza profunda, deixando o ambiente com sensação de frescor e preparo para higienização completa.\n\nAção / Finalidade:\n\nDissolve e remove gorduras e sujeiras difíceis\n\nRemove ceras antigas e resíduos de limpeza\n\nElimina manchas e encardidos\n\nFacilita limpeza pesada em ambientes residenciais e comerciais\n\nIndicação de Uso:\nRecomendado para:\n\nPisos em geral\n\nÁreas externas e internas\n\nCozinhas, lavanderias e banheiros\n\nRemoção de cera\n\nLimpeza prévia antes de aplicar novos produtos de acabamento\n\nCaracterísticas:\n\nConteúdo: 1 litro\n\nAção solvente eficiente\n\nAlto poder de remoção\n\nRendimento ideal para uso doméstico e profissional\n\nFragrância agradável\n\nFácil aplicação com pano, esponja ou mop\n\nVantagens:\n\nLimpeza profunda com menos esforço\n\nVersátil: atua em vários tipos de superfícies\n\nResultado rápido e eficaz\n\nIdeal para manutenção periódica ou limpezas pesadas."
   },
   {
     "image": "images/products/rodinho-de-pia.jfif",
     "name": "Rodinho de Pia",
-    "description": ""
+    "description": "Descrição:\nO Rodinho de Pia é um utensílio prático e eficiente, ideal para remover água, espuma e resíduos de superfícies lisas, especialmente pias, bancadas e azulejos. Leve e fácil de manusear, garante uma limpeza rápida e evita o acúmulo de umidade, contribuindo para a conservação do ambiente.\n\nAção / Finalidade:\n\nRemoção de água e excesso de umidade\n\nLimpeza rápida de superfícies lisas\n\nEliminação de espuma e pequenos resíduos\n\nFacilita a manutenção da pia sempre seca e organizada\n\nIndicação de Uso:\nPerfeito para:\n\nCozinhas domésticas\n\nÁreas de serviço\n\nBancadas e superfícies de mármore, granito e inox\n\nPias de banheiro e cozinha\n\nUso diário e profissional\n\nCaracterísticas:\n\nCabo anatômico, leve e confortável\n\nBorracha flexível que adere bem à superfície\n\nEstrutura resistente e durável\n\nFácil de guardar e transportar\n\nIdeal para superfícies pequenas e médias\n\nMaterial:\n\nEstrutura em plástico resistente\n\nLâmina de borracha flexível\n\nVantagens:\n\nPrático e econômico\n\nAjuda a manter a pia seca e higienizada\n\nEvita manchas causadas por água parada\n\nPode ser usado com ou sem produtos de limpeza."
   },
   {
     "image": "images/products/rodo-001.jfif",
-    "name": "Rodo",
-    "description": ""
+    "name": "Rodo 40cm c/ Cabo ",
+    "description": "e facilita o alcance e melhora a ergonomia\n\nBorracha dupla ou simples (conforme modelo) para melhor eficiência\n\nEstrutura resistente e leve\n\nExcelente aderência ao piso\n\nDisponível em diversos tamanhos (geralmente 40 cm / 50 cm / 60 cm)\n\nMaterial:\n\nBase em plástico resistente ou alumínio (dependendo do modelo)\n\nBorracha flexível de alta durabilidade\n\nCabo em madeira ou alumínio\n\nVantagens:\n\nFacilita a secagem rápida do piso\n\nIdeal para uso contínuo\n\nResistente e de longa vida útil\n\nEvita acúmulo de água e reduz riscos de escorregões\n\nFácil de usar e armazenar."
   },
   {
     "image": "images/products/rodo-002.jfif",
-    "name": "Rodo",
-    "description": ""
+    "name": "Rodo 60 cm c/ Cabo ",
+    "description": "e facilita o alcance e melhora a ergonomia\n\nBorracha dupla ou simples (conforme modelo) para melhor eficiência\n\nEstrutura resistente e leve\n\nExcelente aderência ao piso\n\nDisponível em diversos tamanhos (geralmente 40 cm / 50 cm / 60 cm)\n\nMaterial:\n\nBase em plástico resistente ou alumínio (dependendo do modelo)\n\nBorracha flexível de alta durabilidade\n\nCabo em madeira ou alumínio\n\nVantagens:\n\nFacilita a secagem rápida do piso\n\nIdeal para uso contínuo\n\nResistente e de longa vida útil\n\nEvita acúmulo de água e reduz riscos de escorregões\n\nFácil de usar e armazenar."
   },
   {
     "image": "images/products/rodo-003.jfif",
-    "name": "Rodo",
-    "description": ""
+    "name": "Rodo c/ Cabo Longo",
+    "description": "e facilita o alcance e melhora a ergonomia\n\nBorracha dupla ou simples (conforme modelo) para melhor eficiência\n\nEstrutura resistente e leve\n\nExcelente aderência ao piso\n\nDisponível em diversos tamanhos (geralmente 40 cm / 50 cm / 60 cm)\n\nMaterial:\n\nBase em plástico resistente ou alumínio (dependendo do modelo)\n\nBorracha flexível de alta durabilidade\n\nCabo em madeira ou alumínio\n\nVantagens:\n\nFacilita a secagem rápida do piso\n\nIdeal para uso contínuo\n\nResistente e de longa vida útil\n\nEvita acúmulo de água e reduz riscos de escorregões\n\nFácil de usar e armazenar."
   },
   {
     "image": "images/products/sabao-barra-coco.jfif",
-    "name": "Sabão Barra Coco",
-    "description": ""
+    "name": "Sabão Barra Coco 100g",
+    "description": "Descrição:\nO Sabão em Barra de Coco 100g é formulado com base vegetal e extrato de coco, proporcionando limpeza eficiente com suavidade. Ideal para lavar roupas delicadas e remover manchas difíceis sem agredir os tecidos.\n\nAção / Finalidade:\n\nRemove sujeiras e manchas\n\nLimpeza de roupas delicadas\n\nAção suave, sem danificar fibras\n\nPode ser usado para limpeza geral leve\n\nIndicação de Uso:\nRecomendado para:\n\nRoupas infantis\n\nTecidos delicados (rendados, seda, lã, lingerie)\n\nPré-lavagem de manchas\n\nLavagem manual em geral\n\nUso doméstico e profissional (lavanderias)\n\nCaracterísticas:\n\nBase vegetal\n\nSuave para as mãos e para os tecidos\n\nExcelente poder de espuma\n\nFragrância leve e natural de coco\n\nBiodegradável (na maioria das marcas)\n\nMaterial / Composição:\n\nÓleo de coco\n\nTensoativos suaves\n\nGlicerina (em algumas formulações)\n\nComponentes biodegradáveis\n\nVantagens:\n\nNão agride tecidos\n\nRemove manchas difíceis\n\nAroma suave e agradável\n\nEconômico e eficiente\n\nIndicado para roupas sensíveis e de uso diário."
   },
   {
     "image": "images/products/sabao-em-po-urca.jfif",
-    "name": "Sabão em Pó Urca",
-    "description": ""
+    "name": "Sabão em Pó Urca 1Kg",
+    "description": "Descrição:\nO Sabão em Pó Urca 1kg oferece limpeza profunda e eficiente, removendo sujeiras difíceis e deixando as roupas mais limpas e perfumadas. Sua fórmula contém agentes ativos que potencializam a remoção de manchas e ajudam a preservar as fibras dos tecidos.\n\nAção / Finalidade:\n\nLimpeza completa de roupas brancas e coloridas\n\nRemoção de manchas e sujeiras pesadas\n\nAção desengordurante\n\nPerfuma as peças com fragrância duradoura\n\nIndicação de Uso:\nRecomendado para uso:\n\nDoméstico e profissional\n\nLavagem em máquinas e manual\n\nTecidos brancos e coloridos\n\nRoupas do dia a dia\n\nCaracterísticas:\n\nAlta performance na remoção de manchas\n\nDissolução rápida\n\nNão agride os tecidos\n\nFragrância agradável e prolongada\n\nEspuma na medida certa para máquinas\n\nVantagens:\n\nRoupas mais limpas e perfumadas\n\nEconomia na lavagem com bom rendimento\n\nFórmula equilibrada que protege as fibras\n\nExcelente custo-benefício."
   },
   {
     "image": "images/products/sabao-glicerinado.jfif",
-    "name": "Sabão Glicerinado",
-    "description": ""
+    "name": "Sabão Glicerinado Minuano – 5 Unidades",
+    "description": "Descrição:\nO Sabão Glicerinado Minuano é formulado com agentes suaves e glicerina, proporcionando limpeza eficiente com cuidado para as mãos e para os tecidos. Ideal para lavar roupas delicadas, remover manchas e realizar limpezas gerais com suavidade. O pacote contém 5 unidades, garantindo ótimo rendimento para o uso diário.\n\nAção / Finalidade:\n\nRemove sujeiras leves e moderadas\n\nAção suave para tecidos sensíveis\n\nAjuda a preservar fibras e cores\n\nLimpeza delicada para roupas infantis e íntimas\n\nIndicação de Uso:\nRecomendado para:\n\nLavagem manual de roupas\n\nPeças delicadas (lã, seda, renda, bebê)\n\nPré-lavagem de manchas\n\nLimpeza leve de superfícies\n\nUso doméstico e profissional\n\nCaracterísticas:\n\nContém glicerina, que protege as mãos\n\nSuave para tecidos e peles sensíveis\n\nEspuma cremosa e eficiente\n\nFragrância agradável e leve\n\nBarras firmes e de boa durabilidade\n\nEmbalagem com 5 barras\n\nVantagens:\n\nLimpeza eficiente com proteção\n\nIdeal para roupas delicadas\n\nNão resseca as mãos\n\nÓtimo rendimento no uso diário\n\nExcelente custo-benefício."
   },
   {
     "image": "images/products/saches-de-acucar.jfif",
-    "name": "Sachês de Açúcar",
-    "description": ""
+    "name": "Sachês de Açúcar União – 400 Unidades de 5g",
+    "description": "Descrição:\nOs Sachês de Açúcar União 400 x 5g oferecem praticidade, padronização e higiene no serviço de bebidas. Cada sachê contém 5 gramas de açúcar refinado União, garantindo dosagem precisa e utilização segura, ideal para estabelecimentos comerciais e consumo individual.\n\nAção / Finalidade:\n\nAdoçar bebidas quentes e frias na medida exata\n\nFacilitar o serviço em ambientes com grande fluxo\n\nOferecer higiene e praticidade ao consumidor\n\nIndicação de Uso:\nPerfeito para:\n\nRestaurantes, lanchonetes e padarias\n\nHotéis e cafeterias\n\nEscritórios e eventos\n\nUso doméstico com porções individuais\n\nCaracterísticas:\n\nAçúcar refinado de alta qualidade\n\nSachês lacrados individualmente\n\nPorção padronizada de 5g\n\nEmbalagem prática com 400 unidades\n\nFácil armazenamento e distribuição\n\nVantagens:\n\nMais higiene e organização\n\nEvita desperdícios\n\nFacilita o controle de consumo\n\nMarca reconhecida e confiável\n\nIdeal para serviços profissionais e catering."
   },
   {
     "image": "images/products/sapolio-multiuso-cremoso.jfif",
-    "name": "Sapólio Multiuso Cremoso",
-    "description": ""
+    "name": "Sapólio Radium 250ml – Tradicional",
+    "description": "Descrição:\nO Sapólio Radium 250ml Tradicional é um limpador abrasivo suave, indicado para remoção de sujeiras difíceis, incrustações e manchas em superfícies variadas. Sua fórmula cremosa proporciona limpeza profunda sem danificar materiais, deixando brilho e aparência renovada.\n\nAção / Finalidade:\n\nRemove gorduras, manchas e incrustações\n\nAção abrasiva suave para limpeza pesada\n\nRecupera brilho de superfícies\n\nExcelente para uso doméstico e profissional\n\nIndicação de Uso:\nIdeal para limpeza de:\n\nFogões, pias e inox\n\nPanelas e utensílios metálicos\n\nLouças e cerâmicas\n\nSuperfícies esmaltadas\n\nAzulejos e bancadas\n\nSuperfícies duras em geral\n\nCaracterísticas:\n\nFórmula cremosa fácil de aplicar\n\nAbrasão controlada (não risca facilmente)\n\nAlto poder desengordurante\n\nRendimento elevado\n\nFragrância suave\n\nEmbalagem de 250ml\n\nVantagens:\n\nRemove sujeira pesada com facilidade\n\nDevolve brilho às superfícies\n\nUso versátil em diferentes materiais\n\nNão escorre e facilita o polimento\n\nExcelente custo-benefício."
   },
   {
     "image": "images/products/sem-nome001.jfif",
-    "name": "",
-    "description": ""
+    "name": "Refil Mop Pó ",
+    "description": "Descrição:\nO Refil Mop Pó é desenvolvido para limpeza a seco de superfícies amplas, removendo poeira, fiapos e partículas soltas com alta eficiência. Fabricado em material têxtil macio e de grande capacidade de retenção, é ideal para manutenção diária de pisos em ambientes comerciais, industriais e residenciais.\n\nAção / Finalidade:\n\nColeta de poeira e partículas soltas\n\nLimpeza a seco de alta eficiência\n\nManutenção diária de grandes áreas\n\nRedução da dispersão de pó no ambiente\n\nIndicação de Uso:\nRecomendado para:\n\nPisos frios, vinílicos, madeira, porcelanato e cimentados\n\nCorredores, escritórios, galpões e comércios\n\nEscolas, mercados, condomínios e clínicas\n\nUso profissional e doméstico\n\nCaracterísticas:\n\nTecido macio com alta capacidade de retenção\n\nAcabamento que evita soltar fiapos\n\nFixação compatível com suportes de mop pó\n\nLeve, resistente e de fácil substituição\n\nDisponível em diferentes tamanhos (40cm, 60cm e 80cm)\n\nVantagens:\n\nFacilita a limpeza rápida de grandes áreas\n\nReduz a necessidade de varrição tradicional\n\nEvita levantar poeira\n\nAumenta a durabilidade do equipamento\n\nExcelente custo-benefício."
   },
   {
     "image": "images/products/sem-nome002.jfif",
-    "name": "",
-    "description": ""
+    "name": "Papel Higiênico Baby Cai Cai Folha Simples – 10.000 Folhas",
+    "description": "Descrição:\nO Papel Higiênico Baby Cai Cai Folha Simples é desenvolvido para dispensadores tipo \"cai-cai\", oferecendo praticidade, higiene e economia. Produzido em folha simples de boa resistência, garante rendimento elevado e reposição rápida, ideal para ambientes com grande fluxo de pessoas. A embalagem contém 10.000 folhas, proporcionando excelente custo-benefício.\n\nAção / Finalidade:\n\nHigienização pessoal\n\nUso contínuo em banheiros com alta demanda\n\nRedução de desperdício através de distribuição folha a folha\n\nIndicação de Uso:\nIdeal para:\n\nEmpresas, escritórios e indústrias\n\nEscolas, clínicas e comércios\n\nRestaurantes e estabelecimentos com grande circulação\n\nBanheiros equipados com dispenser tipo cai-cai\n\nCaracterísticas:\n\nFolha simples\n\nPapel macio, resistente e absorvente\n\nCortado em folhas individuais\n\nAlto rendimento com 10.000 folhas\n\nCompatível com dispensadores padrão cai-cai\n\nEmbalagem compacta e fácil de armazenar\n\nVantagens:\n\nEconomia devido ao sistema folha a folha\n\nReduz desperdícios e evita excesso de uso\n\nMaior higiene na retirada\n\nExcelente custo-benefício para uso profissional\n\nReposição rápida e prática."
   },
   {
     "image": "images/products/sem-nome003.jfif",
-    "name": "",
-    "description": ""
+    "name": "Dispenser Higiênico Cai Cai",
+    "description": "Descrição:\nO Dispenser Higiênico Cai Cai foi desenvolvido para acomodar papéis higiênicos interfolhados no sistema “folha a folha”, garantindo higiene, economia e praticidade no uso. Seu design facilita a retirada controlada de cada folha, reduzindo desperdícios e mantendo o banheiro sempre organizado.\n\nAção / Finalidade:\n\nDispensar papel higiênico interfolhado\n\nGarantir retirada individual de folhas\n\nEvitar desperdícios e contato excessivo com o produto\n\nManter o ambiente mais limpo e higiênico\n\nIndicação de Uso:\nIdeal para banheiros de:\n\nEmpresas e escritórios\n\nEscolas e clínicas\n\nComércios em geral\n\nRestaurantes e locais de grande circulação\n\nCondomínios e ambientes corporativos\n\nCaracterísticas:\n\nCompatível com papéis higiênicos cai-cai/interfolhados\n\nSistema de distribuição folha a folha\n\nEstrutura resistente em plástico durável (ABS ou PP, dependendo da marca)\n\nAbertura para reposição rápida\n\nPossui visor para monitorar o nível do papel\n\nFixação segura na parede\n\nDesign funcional e discreto\n\nVantagens:\n\nEconomia significativa de papel\n\nMaior higiene no uso\n\nReposição simples e prática\n\nEvita acúmulo de folhas soltas\n\nExcelente para banheiros com alto fluxo\n\nDurável e de fácil limpeza."
   },
   {
     "image": "images/products/sem-nome004.jfif",
-    "name": "",
-    "description": ""
+    "name": "Mop Pó Completo ",
+    "description": "Descrição:\nO Mop Pó Completo é um equipamento profissional de limpeza a seco, projetado para remoção eficiente de poeira, fiapos e partículas soltas em grandes áreas. Ele acompanha suporte + cabo + refil, proporcionando praticidade, agilidade e excelente desempenho em pisos de diferentes tipos.\n\nAção / Finalidade:\n\nVarrição seca de alta eficiência\n\nColeta de poeira e partículas finas\n\nManutenção diária de ambientes amplos\n\nRedução da dispersão de pó durante a limpeza\n\nIndicação de Uso:\nIdeal para:\n\nEscritórios, comércios e indústrias\n\nEscolas, hospitais, condomínios e mercados\n\nPisos frios, vinílicos, cerâmicos, madeira, porcelanato e cimentados\n\nUso doméstico e profissional\n\nCaracterísticas:\n\nKit completo: cabo + suporte articulado + refil têxtil\n\nTecido com alta capacidade de retenção de pó\n\nDesign articulado para alcançar cantos e áreas difíceis\n\nCabo leve, resistente e ergonômico\n\nSuporte durável e de fácil encaixe do refil\n\nDisponível em diversos tamanhos (40cm, 60cm e 80cm)\n\nVantagens:\n\nLimpeza rápida e silenciosa\n\nSubstitui a vassoura tradicional com maior eficiência\n\nNão levanta poeira\n\nFácil de usar e de fazer manutenção\n\nExcelente custo-benefício para áreas amplas."
   },
   {
     "image": "images/products/sem-nome005.jfif",
-    "name": "",
-    "description": ""
+    "name": "Detergente VM 5L",
+    "description": "Descrição:\nO Detergente VM 5L é um detergente líquido concentrado, indicado para limpeza geral com excelente poder desengordurante. Sua fórmula equilibrada facilita a remoção de sujeiras orgânicas, gorduras e resíduos aderidos, garantindo eficiência tanto em ambientes domésticos quanto profissionais.\n\nAção / Finalidade:\n\nRemoção de gorduras e sujidades\n\nLimpeza de superfícies laváveis\n\nHigienização de áreas de preparo e utensílios (quando aplicável)\n\nUso geral em manutenção diária\n\nIndicação de Uso:\nRecomendado para limpeza de:\n\nPisos, azulejos e superfícies frias\n\nMesas, bancadas e ambientes de cozinha\n\nUtensílios (conforme indicação do fabricante)\n\nAmbientes comerciais e industriais\n\nUso doméstico e profissional\n\nCaracterísticas:\n\nAlto poder desengordurante\n\nProduto concentrado com ótimo rendimento\n\nFácil diluição em água\n\nFragrância suave e agradável\n\nEmbalagem econômica de 5 litros\n\nBoa performance na limpeza diária\n\nVantagens:\n\nExcelente custo-benefício\n\nIdeal para grandes áreas e uso frequente\n\nRende mais devido à diluição\n\nVersátil e eficaz em diferentes superfícies\n\nRemove sujeira e gordura com facilidade."
   },
   {
     "image": "images/products/sem-nome006.jfif",
-    "name": "",
-    "description": ""
+    "name": "Sabonete Liquido Premisse Morango 5L",
+    "description": "Descrição:\nO Sabonete Líquido Premisse Morango 5L é formulado para promover limpeza suave e eficaz das mãos, deixando a pele perfumada com fragrância adocicada de morango. Sua fórmula hidratante contém agentes emolientes que evitam o ressecamento, sendo ideal para uso frequente em ambientes com alto fluxo de pessoas.\n\nAção / Finalidade:\n\nLimpeza e higienização das mãos\n\nAção hidratante que preserva a maciez da pele\n\nDeixa aroma agradável e duradouro de morango\n\nIndicação de Uso:\nPerfeito para:\n\nBanheiros comerciais e corporativos\n\nRestaurantes, lojas e escolas\n\nClínicas e consultórios\n\nCondomínios e espaços públicos\n\nUso doméstico\n\nCaracterísticas:\n\nFórmula suave com agentes hidratantes\n\nTextura cremosa e espuma abundante\n\nFragrância doce de morango\n\nNão agride a pele\n\nEmbalagem econômica de 5 litros\n\nIdeal para uso com dispenser\n\nVantagens:\n\nAlto rendimento e excelente custo-benefício\n\nPerfume agradável que garante sensação de frescor\n\nAdequado para uso contínuo\n\nMantém a pele limpa e hidratada\n\nIdeal para ambientes com grande circulação de pessoas."
   },
   {
     "image": "images/products/sem-nome007.jfif",
-    "name": "",
-    "description": ""
+    "name": "Rodo Limpa Vidro 35cm Alumínio – Completo",
+    "description": "Descrição:\nO Rodo Limpa Vidro 35cm Alumínio Completo é um equipamento profissional desenvolvido para limpeza eficiente de vidros, espelhos e superfícies lisas. Possui estrutura em alumínio leve e resistente, lâmina de borracha de alta qualidade e empunhadura ergonômica, garantindo agilidade e precisão na remoção de água e sujidades.\n\nAção / Finalidade:\n\nRemoção de água, sabão e resíduos\n\nFinalização de limpeza de vidros sem deixar marcas\n\nAuxilia na secagem rápida e uniforme\n\nIndicação de Uso:\nIdeal para:\n\nVidros internos e externos\n\nEspelhos, vitrines e box de banheiro\n\nPortas de vidro e superfícies lisas\n\nUso doméstico, comercial e profissional\n\nCaracterísticas:\n\nLargura de 35cm para maior cobertura\n\nCorpo em alumínio leve, resistente à corrosão\n\nLâmina de borracha flexível e de alta durabilidade\n\nCabo anatômico que proporciona melhor pegada\n\nAcabamento profissional para limpeza sem riscos\n\nPode ser utilizado com extensores (dependendo do modelo)\n\nVantagens:\n\nAlta eficiência na remoção de líquidos\n\nDeixa o vidro sem manchas ou embaçados\n\nMaterial resistente, leve e durável\n\nFácil manuseio e manutenção\n\nExcelente custo-benefício para uso contínuo."
   },
   {
     "image": "images/products/sem-nome008.jfif",
-    "name": "",
-    "description": ""
+    "name": "Lava Louças Suprema Neutro 5L",
+    "description": "Descrição:\nO Lava Louças Suprema Neutro 5L é um detergente líquido de alta performance, formulado para remover gorduras e resíduos alimentares com eficiência, mantendo a segurança e a integridade dos utensílios. Possui pH neutro, o que garante suavidade para as mãos e torna sua aplicação adequada para uso frequente.\n\nAção / Finalidade:\n\nRemoção de gorduras e resíduos orgânicos\n\nLimpeza de louças, copos, talheres e utensílios de cozinha\n\nDesengordurante de alta eficiência\n\nProdução de espuma abundante e duradoura\n\nIndicação de Uso:\nIndicado para:\n\nCozinhas domésticas e profissionais\n\nRestaurantes, bares, lanchonetes e padarias\n\nEquipamentos e superfícies laváveis\n\nUso em dispensers de detergente (refil)\n\nCaracterísticas:\n\nFórmula neutra, suave para as mãos\n\nAlta eficiência de limpeza\n\nExcelente poder desengordurante\n\nFragrância neutra e discreta\n\nEmbalagem econômica de 5 litros\n\nBoa diluição e rendimento elevado\n\nVantagens:\n\nRemove sujeira e gordura com facilidade\n\nIdeal para uso contínuo\n\nNão agride superfícies nem utensílios\n\nRende muito devido à fórmula concentrada\n\nÓtimo custo-benefício para uso comercial."
   },
   {
     "image": "images/products/sem-nome009.jfif",
-    "name": "",
-    "description": ""
+    "name": "Sabonete Frescor da Manhã 5L",
+    "description": "Descrição:\nO Sabonete Líquido Frescor da Manhã 5L é desenvolvido para limpeza suave e eficaz das mãos, proporcionando sensação de frescor e bem-estar após o uso. Sua fórmula contém agentes hidratantes que mantêm a pele macia, além de uma fragrância leve e revitalizante ideal para ambientes com grande circulação de pessoas.\n\nAção / Finalidade:\n\nHigienização suave e eficiente das mãos\n\nHidratação e proteção da pele\n\nSensação refrescante durante e após o uso\n\nIndicação de Uso:\nRecomendado para:\n\nBanheiros comerciais e corporativos\n\nClínicas, escritórios e escolas\n\nRestaurantes, lojas e condomínios\n\nUso doméstico com dispenser\n\nCaracterísticas:\n\nFórmula suave, não irritante\n\nFragrância fresca e agradável\n\nEspuma cremosa e fácil de enxaguar\n\nEmbalagem econômica de 5 litros\n\nAlto rendimento, ideal para refil\n\nCompatível com dispensers de sabonete líquido\n\nVantagens:\n\nExcelente custo-benefício\n\nIndicado para uso contínuo\n\nMantém as mãos limpas, macias e perfumadas\n\nIdeal para locais com alto fluxo\n\nFácil reposição e armazenamento."
   },
   {
     "image": "images/products/sem-nome010.jfif",
-    "name": "",
-    "description": ""
+    "name": "Sabonete Líquido Erva Doce Deoline 5L",
+    "description": "Descrição:\nO Sabonete Líquido Erva Doce Deoline 5L promove limpeza suave e eficaz das mãos, combinando agentes de higienização com o aroma clássico e refrescante de erva-doce. Sua fórmula balanceada contém componentes hidratantes que protegem e preservam a maciez da pele, ideal para uso frequente em ambientes de grande circulação.\n\nAção / Finalidade:\n\nHigienização eficiente das mãos\n\nAção hidratante que evita o ressecamento\n\nSensação de frescor com fragrância de erva-doce\n\nIndicação de Uso:\nIdeal para:\n\nBanheiros comerciais e empresariais\n\nCondomínios, lojas e escolas\n\nClínicas, consultórios e academias\n\nUso doméstico com dispenser\n\nCaracterísticas:\n\nFórmula suave e dermatologicamente segura\n\nFragrância leve e agradável de erva-doce\n\nEspuma cremosa, fácil de enxaguar\n\nEmbalagem econômica de 5 litros\n\nAlto rendimento como refil para dispensers\n\nCor verde clara (pode variar conforme lote)\n\nVantagens:\n\nIdeal para uso frequente\n\nMantém as mãos limpas, hidratadas e perfumadas\n\nExcelente custo-benefício\n\nFácil reposição e armazenamento\n\nCompatível com qualquer dispenser de sabonete líquido."
   },
   {
     "image": "images/products/sem-nome011.jfif",
-    "name": "",
-    "description": ""
+    "name": "Saboneteira Invoq Líquida Branca – Premisse",
+    "description": "Descrição:\nA Saboneteira Invoq Líquida Branca Premisse é um dispenser de parede desenvolvido para uso profissional, oferecendo praticidade, resistência e controle no consumo de sabonete líquido. Fabricado em material de alta durabilidade, possui design clean e moderno, adequado para ambientes comerciais e institucionais.\n\nAplicação / Finalidade:\n\nDispensação controlada de sabonete líquido\n\nIdeal para banheiros com fluxo moderado a alto\n\nIndicação de Uso:\nRecomendada para:\n\nEmpresas, escritórios e comércios\n\nEscolas, clínicas, consultórios e academias\n\nRestaurantes, cozinhas e áreas de manipulação\n\nBanheiros públicos e corporativos\n\nCaracterísticas Técnicas:\n\nModelo: Invoq Líquida\n\nCor: Branco\n\nMarca: Premisse\n\nTipo: Saboneteira para sabonete líquido\n\nInstalação: Fixação em parede\n\nSistema: Acionamento manual\n\nCapacidade: Aproximadamente 800–1000 ml (varia conforme o modelo Invoq)\n\nMaterial: Plástico resistente (PP ou ABS, conforme linha)\n\nVisor frontal para controle de nível\n\nTampa com trava para evitar uso indevido\n\nVantagens:\n\nAlta durabilidade e fácil higienização\n\nReduz desperdícios com dosagem controlada\n\nDesign discreto que combina com qualquer ambiente\n\nReposição rápida de refil\n\nExcelente custo-benefício para uso contínuo."
   },
   {
     "image": "images/products/sem-nome012.jfif",
-    "name": "",
-    "description": ""
+    "name": "Sabonete Líquido Pêssego 5L – Premisse",
+    "description": "Descrição:\nO Sabonete Líquido Premisse Pêssego 5L é desenvolvido para higiene das mãos com fragrância suave e agradável. Sua fórmula limpa de forma eficiente, proporcionando maciez, hidratação e um aroma frutal delicado após o uso.\n\nAplicação / Finalidade:\n\nHigienização das mãos em ambientes profissionais e domésticos\n\nUso ideal para dispensers de sabonete líquido\n\nIndicação de Uso:\nRecomendado para:\n\nEmpresas, escritórios e comércios\n\nRestaurantes, lanchonetes e cozinhas\n\nClínicas, escolas, academias e áreas de circulação\n\nBanheiros corporativos ou públicos\n\nCaracterísticas Técnicas:\n\nTipo: Sabonete líquido\n\nFragrância: Pêssego\n\nMarca: Premisse\n\nVolume: 5 litros\n\nCor/Aspecto: Líquido perolado (pode variar conforme lote)\n\nIndicado para dispensers refiláveis\n\nLimpeza suave com toque hidratante\n\nVantagens:\n\nAlto rendimento para uso frequente\n\nFragrância agradável e leve\n\nÓtima relação custo x benefício\n\nTextura cremosa que não resseca as mãos."
   },
   {
     "image": "images/products/sem-nome013.jfif",
-    "name": "",
-    "description": ""
+    "name": "Dispenser Invoq Papel Higiênico Rolão – Branco",
+    "description": "Descrição:\nO Dispenser Invoq para Papel Higiênico Rolão (Branco) foi desenvolvido para ambientes que exigem praticidade, organização e higiene. Possui design moderno, acabamento resistente e sistema de fácil reposição, garantindo economia e controle de consumo.\n\nAplicação / Finalidade:\nIdeal para uso com rolos de papel higiênico de alto rendimento (rolão), atendendo locais com grande fluxo de pessoas.\n\nIndicação de Uso:\nRecomendado para:\n\nEmpresas e escritórios\n\nBanheiros comerciais e industriais\n\nEscolas, clínicas, academias\n\nRestaurantes e estabelecimentos em geral\n\nCaracterísticas Técnicas:\n\nModelo: Dispenser para Papel Higiênico Rolão\n\nMarca: Invoq\n\nMaterial: Plástico resistente (ABS)\n\nCor: Branco\n\nSistema de abertura para reposição rápida\n\nFixação em parede\n\nCompatível com rolos de alta metragem\n\nVantagens:\n\nAlta durabilidade\n\nReduz desperdício\n\nFácil limpeza\n\nDesign clean e discreto\n\nMantém a higiene e organização do ambiente."
   },
   {
     "image": "images/products/sem-nome014.jfif",
-    "name": "",
-    "description": ""
+    "name": "Sabonete Espuma Pêssego 5L – Premisse",
+    "description": "Descrição:\nO Sabonete Espuma Premisse Pêssego 5L é formulado para proporcionar limpeza suave, eficaz e com alto rendimento. Sua textura em espuma garante economia e uma aplicação uniforme, enquanto a fragrância de pêssego oferece sensação de frescor e cuidado durante o uso.\n\nAplicação / Finalidade:\nIndicado para higienização frequente das mãos com suavidade, ideal para ambientes que necessitam de alta rotatividade e reposição prática.\n\nIndicação de Uso:\nRecomendado para:\n\nEmpresas, escritórios e comércios\n\nClínicas, consultórios e escolas\n\nRestaurantes, cozinhas e áreas de manipulação de alimentos\n\nBanheiros de uso coletivo\n\nCaracterísticas Técnicas:\n\nTipo: Sabonete espuma\n\nFragrância: Pêssego\n\nMarca: Premisse\n\nEmbalagem: Galão 5 litros\n\nAlto rendimento por acionamento\n\nFórmula suave e hidratante\n\nCompatível com dispensers de sabonete espuma\n\nVantagens:\n\nMaior economia devido ao formato espuma\n\nPerfume agradável e leve\n\nTextura cremosa e fácil de enxaguar\n\nSensação de frescor e maciez nas mãos\n\nIdeal para uso contínuo sem ressecar a pele."
   },
   {
     "image": "images/products/sem-nome015.jfif",
-    "name": "",
-    "description": ""
+    "name": "Desinfetante Concentrado Campestre 5L – Agi Pro",
+    "description": "Descrição:\nO Desinfetante Concentrado Agi Pro Campestre 5L oferece higienização eficiente com fragrância refrescante que remete ao aroma de campo. Sua fórmula concentrada garante alto poder de limpeza, desinfecção e rendimento, sendo ideal para grandes áreas e rotinas profissionais.\n\nAplicação / Finalidade:\nDesenvolvido para limpeza, desodorização e desinfecção de superfícies laváveis, deixando o ambiente limpo e perfumado por mais tempo.\n\nIndicação de Uso:\nRecomendado para:\n\nCondomínios e áreas comuns\n\nEmpresas, escritórios e comércios\n\nClínicas, escolas e instituições\n\nAmbientes industriais e operacionais\n\nCaracterísticas Técnicas:\n\nTipo: Desinfetante concentrado\n\nFragrância: Campestre\n\nMarca: Agi Pro\n\nEmbalagem: Galão 5 litros\n\nAlto rendimento quando diluído\n\nAção germicida e bactericida\n\nPode ser utilizado puro ou diluído, conforme necessidade\n\nVantagens:\n\nElimina odores e perfuma intensamente\n\nExcelente custo-benefício\n\nRendimento superior devido à concentração\n\nLimpeza rápida e eficiente\n\nIdeal para uso profissional e rotinas de grande volume."
   },
   {
     "image": "images/products/sem-nome016.jfif",
-    "name": "",
-    "description": ""
+    "name": "Mexedor de Café 9,5 cm – 500 Unidades – Mexa Bem",
+    "description": "Descrição:\nO Mexedor de Café Mexe Bem 9,5 cm é ideal para misturar bebidas quentes ou frias com praticidade e higiene. Fabricado em material resistente e descartável, oferece segurança no manuseio e evita contaminações, sendo perfeito para ambientes com grande fluxo de pessoas.\n\nAplicação / Finalidade:\nIndicado para mexer café, chá, sucos, drinks e outras bebidas servidas em copos descartáveis.\n\nIndicação de Uso:\nRecomendado para:\n\nEscritórios e empresas\n\nCafeterias e lanchonetes\n\nRestaurantes e padarias\n\nEventos, reuniões e recepções\n\nAmbientes corporativos e comerciais\n\nCaracterísticas Técnicas:\n\nMarca: Mexe Bem\n\nTamanho: 9,5 cm\n\nMaterial: Plástico descartável\n\nCor: Natural (transparente) – pode variar conforme fabricante\n\nEmbalagem: 500 unidades\n\nLeve, higiênico e resistente ao calor\n\nVantagens:\n\nPraticidade no uso diário\n\nMantém a higiene no preparo e consumo de bebidas\n\nIdeal para uso profissional e grande circulação\n\nExcelente custo-benefício\n\nCompatível com todos os tipos de copos descartáveis."
   },
   {
     "image": "images/products/sem-nome017.jfif",
-    "name": "",
-    "description": ""
+    "name": "Limpa Azulejo com Cabo",
+    "description": "Descrição:\nO Limpa Azulejo com Cabo é um acessório prático e resistente, desenvolvido para facilitar a limpeza de paredes, azulejos e superfícies verticais nas áreas internas e externas. Possui base abrasiva eficiente para remoção de sujeira, manchas, gordura e resíduos acumulados, garantindo resultado rápido sem necessidade de esforço excessivo.\n\nAplicação / Finalidade:\nIdeal para limpeza pesada ou intermediária em superfícies cerâmicas, azulejos, box de banheiro, áreas de serviço e cozinhas.\n\nIndicação de Uso:\nRecomendado para:\n\nResidências\n\nEmpresas e escritórios\n\nCondomínios\n\nRestaurantes e cozinhas industriais\n\nÁreas de manutenção e limpeza profissional\n\nCaracterísticas Técnicas:\n\nProduto: Limpa azulejo com cabo\n\nCabo resistente para maior alcance e ergonomia\n\nBase abrasiva indicada para remoção de sujeiras difíceis\n\nIdeal para uso vertical e em áreas de difícil acesso\n\nLeve e fácil de manusear\n\nVantagens:\n\nAumenta a produtividade na limpeza\n\nReduz esforço físico\n\nRemove sujeiras incrustadas com facilidade\n\nDurable e eficiente\n\nIndispensável para serviços de limpeza profissional."
   },
   {
     "image": "images/products/sem-nome018.jfif",
-    "name": "",
-    "description": ""
+    "name": "Desinfetante Clean UP Talco 5L",
+    "description": "Descrição:\nO Desinfetante Clean UP Talco 5L foi formulado para promover limpeza profunda com perfume suave e confortável de talco. Sua ação desinfetante elimina germes e bactérias, deixando os ambientes higienizados, frescos e agradavelmente perfumados por horas. Ideal para uso profissional e doméstico.\n\nAplicação / Finalidade:\nIndicado para limpeza, desodorização e desinfecção de pisos, superfícies laváveis, banheiros, áreas comuns e ambientes em geral.\n\nIndicação de Uso:\nRecomendado para:\n\nResidências\n\nEscritórios e empresas\n\nComércios e condomínios\n\nEscolas, clínicas e consultórios\n\nLimpeza profissional em geral\n\nCaracterísticas Técnicas:\n\nTipo: Desinfetante perfumado\n\nFragrância: Talco\n\nEmbalagem: Galão 5 litros\n\nAlto rendimento\n\nAção bactericida e desodorizante\n\nIndicado para uso puro ou diluído\n\nCompatível com diversos tipos de pisos e superfícies\n\nVantagens:\n\nAroma suave e prolongado de talco\n\nExcelente poder de limpeza e desinfecção\n\nRendimento superior\n\nReduz odores e deixa sensação de frescor\n\nIdeal para ambientes com grande circulação."
   },
   {
     "image": "images/products/sem-nome019.jfif",
-    "name": "",
-    "description": ""
+    "name": "Saco de Lixo Tamanhos 20L, 40L, 60L, 100L e 200L",
+    "description": "Descrição:\nOs Sacos de Lixo nas capacidades 20L, 40L, 60L, 100L e 200L são desenvolvidos para atender diferentes necessidades de descarte, desde uso doméstico até aplicações comerciais e industriais. Produzidos em material resistente, suportam peso, evitam rasgos e garantem maior segurança no manuseio dos resíduos.\n\nAplicação / Finalidade:\nIndicados para coleta e armazenamento de resíduos comuns, orgânicos e recicláveis, mantendo a higiene e organização dos ambientes.\n\nIndicação de Uso:\nPerfeitos para:\n\nResidências e condomínios\n\nEscritórios e ambientes comerciais\n\nRestaurantes, lanchonetes e cozinhas\n\nClínicas, escolas e empresas\n\nÁreas externas, estacionamentos e setores operacionais\n\nCaracterísticas Técnicas:\n\nDisponíveis nos tamanhos: 20L, 40L, 60L, 100L e 200L\n\nMaterial: Polietileno reforçado (varia conforme fabricante)\n\nCores comuns: Preto ou azul\n\nResistência a perfurações e rasgos\n\nIndicados para lixeiras de diferentes capacidades\n\nBoa vedação e durabilidade\n\nVantagens:\n\nVários tamanhos para diferentes necessidades\n\nResistente e seguro para descarte diário\n\nEvita vazamentos e mau cheiro\n\nIdeal para uso doméstico e profissional\n\nExcelente custo-benefício."
   },
   {
     "image": "images/products/sem-nome020.jfif",
-    "name": "",
-    "description": ""
+    "name": "Sabonete Líquido Erva Doce 5L – Premisse",
+    "description": "Descrição:\nO Sabonete Líquido Premisse Erva Doce 5L proporciona limpeza suave e eficaz, deixando as mãos macias e delicadamente perfumadas com a fragrância clássica e refrescante de erva doce. Sua fórmula equilibrada é ideal para uso frequente, garantindo cuidado e hidratação sem agredir a pele.\n\nAplicação / Finalidade:\nIndicado para higienização diária das mãos em ambientes que exigem praticidade, economia e alto rendimento.\n\nIndicação de Uso:\nRecomendado para:\n\nEscritórios e empresas\n\nEscolas e instituições\n\nClínicas, consultórios e hospitais\n\nRestaurantes e cozinhas\n\nBanheiros de uso coletivo ou residencial\n\nCaracterísticas Técnicas:\n\nTipo: Sabonete líquido\n\nFragrância: Erva Doce\n\nMarca: Premisse\n\nEmbalagem: Galão 5 litros\n\nFórmula suave e hidratante\n\nAlto rendimento por recarga\n\nCompatível com dispensers líquidos convencionais\n\nVantagens:\n\nFragrância refrescante e agradável\n\nTextura suave, fácil de espalhar e enxaguar\n\nNão resseca as mãos\n\nExcelente custo-benefício para uso contínuo\n\nIdeal para ambientes com grande fluxo de pessoas."
   },
   {
     "image": "images/products/sem-nome021.jfif",
-    "name": "",
-    "description": ""
+    "name": "Pano Multiuso Perflex c/ 600 Panos – Nobre",
+    "description": "Descrição:\nO Pano Multiuso Perflex Inoven é desenvolvido em material não tecido (TNT) de alta resistência e absorção, ideal para limpezas rápidas, práticas e higiênicas. Embalado em rolo com 600 panos destacáveis, oferece ótimo rendimento e economia para ambientes com grande fluxo de uso ou para equipes profissionais de limpeza.\n\nAção / Finalidade:\n\nLimpeza geral de superfícies\n\nAbsorção eficiente de líquidos e remoção de sujeiras\n\nSubstitui panos tradicionais com maior higiene (uso descartável)\n\nAjuda a reduzir contaminação cruzada\n\nIndicação de Uso:\nRecomendado para:\n\nCozinhas industriais e comerciais\n\nEscritórios e empresas\n\nClínicas, consultórios e ambientes hospitalares (uso não estéril)\n\nResidências\n\nSetor de limpeza profissional\n\nManutenção de rotina em superfícies diversas\n\nCaracterísticas:\n\nContém 600 panos no rolo\n\nPanos destacáveis e prontos para uso\n\nMaterial: TNT (tecido não tecido)\n\nAlta absorção e resistência\n\nTextura que facilita a remoção de sujeira\n\nUso descartável, mais higiênico\n\nIdeal para superfícies lisas, móveis, pisos e equipamentos\n\nVantagens:\n\nEconômico: grande quantidade no rolo\n\nPrático: destaca e usa\n\nHigiênico: reduz risco de proliferação de bactérias\n\nVersátil para diversos tipos de limpeza."
   },
   {
     "image": "images/products/tixam-ype-sabao-em-po.jfif",
-    "name": "Tixam Ypê Sabão em Pó",
-    "description": ""
+    "name": "Tixam Ypê Sabão em Pó 800g",
+    "description": "Descrição:\nO Sabão em Pó Tixan Ypê 800g oferece alta performance na remoção de sujeiras difíceis, garantindo roupas limpas, perfumadas e com cores preservadas. Sua fórmula eficiente atua profundamente nas fibras, removendo manchas e odores, ao mesmo tempo em que cuida dos tecidos.\n\nAplicação / Finalidade:\nIndicado para lavagem de roupas em geral, tanto à mão quanto na máquina, alcançando excelente rendimento e limpeza completa.\n\nIndicação de Uso:\nRecomendado para:\n\nUso doméstico\n\nLavanderias pequenas\n\nLimpeza de roupas do dia a dia, peças brancas e coloridas\n\nCaracterísticas Técnicas:\n\nProduto: Sabão em Pó\n\nMarca: Tixan Ypê\n\nPeso: 800g\n\nAlta eficiência na remoção de manchas\n\nPerfuma e realça o frescor das roupas\n\nDissolução rápida\n\nPode ser utilizado em lavadoras de qualquer modelo\n\nVantagens:\n\nPoder de limpeza profundo\n\nRende mais por lavagem\n\nMantém maciez e cuidado com o tecido\n\nPerfume duradouro e agradável\n\nExcelente custo-benefício."
   },
   {
     "image": "images/products/toalha-de-papel.jfif",
-    "name": "Toalha de Papel",
-    "description": ""
+    "name": "Papel Interfolha Dubbon 100% Celulose 20x21",
+    "description": "Descrição:\nO Papel Interfolha Dubbon 100% Celulose 20x21 é produzido com fibras virgens de alta qualidade, garantindo maciez, resistência e excelente absorção. Ideal para ambientes que exigem higiene e praticidade, oferece excelente desempenho em dispensers de papel interfolhado.\n\nAplicação / Finalidade:\nIndicado para secagem das mãos, limpeza leve de superfícies e uso geral em ambientes profissionais ou domésticos.\n\nIndicação de Uso:\nRecomendado para:\n\nEmpresas e escritórios\n\nClínicas, consultórios e hospitais\n\nBanheiros comerciais\n\nRestaurantes, cozinhas e estabelecimentos em geral\n\nAmbientes residenciais\n\nCaracterísticas Técnicas:\n\nTipo: Papel Interfolha\n\nMarca: Dubbon\n\nMaterial: 100% celulose virgem\n\nDimensão: 20 cm x 21 cm\n\nAlto poder de absorção\n\nToque macio e resistente\n\nCompatível com dispensers padrão interfolha\n\nVantagens:\n\nMais maciez e conforto\n\nAlta absorção, reduzindo o consumo\n\nResistente, não rasga facilmente\n\nExcelente apresentação e higiene\n\nIdeal para ambientes com grande fluxo de pessoas."
   },
   {
     "image": "images/products/vaselina-liquida.jfif",
-    "name": "Vaselina Líquida",
-    "description": ""
+    "name": "Vaselina Líquida 1L",
+    "description": "Descrição:\nA Vaselina Líquida 1L é um lubrificante multiuso de alta pureza, desenvolvido para aplicações industriais, comerciais e domésticas. Sua fórmula incolor, inodora e atóxica reduz atrito, protege superfícies metálicas contra corrosão e facilita o deslizamento de peças e mecanismos.\n\nAplicação / Finalidade:\nIndicada para lubrificação, proteção, conservação e redução de desgaste em diversos tipos de superfícies e equipamentos.\n\nIndicação de Uso:\nRecomendada para:\n\nIndústrias em geral\n\nOficinas mecânicas\n\nEquipamentos e ferramentas\n\nMóveis, dobradiças e fechaduras\n\nManutenção de máquinas e peças metálicas\n\nUso doméstico em superfícies que necessitam lubrificação leve\n\nCaracterísticas Técnicas:\n\nProduto: Vaselina líquida\n\nEmbalagem: 1 litro\n\nCor: Incolor\n\nOdor: Neutro\n\nAtóxica\n\nNão mancha e não resseca\n\nBaixa viscosidade para aplicação facilitada\n\nVantagens:\n\nExcelente propriedade lubrificante\n\nProtege contra ferrugem e oxidação\n\nFácil aplicação e alto rendimento\n\nNão agride superfícies\n\nUso versátil em vários segmentos."
   },
   {
     "image": "images/products/vassoura-001.jfif",
-    "name": "Vassoura",
-    "description": ""
+    "name": "Vassoura com Cabo – Cerdas Duplas",
+    "description": "Descrição do Produto:\nA Vassoura com Cabo e Cerdas Duplas foi desenvolvida para garantir uma varrição eficiente e rápida em ambientes internos. Possui base resistente em plástico vermelho e cabo firme, proporcionando maior durabilidade e conforto durante o uso. Suas cerdas bicolores — internas pretas e externas cinza — são densas e altamente eficazes, permitindo alcançar cantos, remover poeira fina e recolher sujeiras maiores com facilidade.\n\nCaracterísticas:\n\nBase resistente em plástico rígido\n\nCabo robusto para melhor ergonomia\n\nCerdas duplas (pretas e cinzas) de alta eficiência\n\nIdeal para pisos internos\n\nExcelente desempenho na remoção de poeira e resíduos\n\nDesign moderno e durável\n\nIndicação de Uso:\nPerfeita para casas, escritórios, comércios e ambientes que exigem limpeza rápida e precisa."
   },
   {
     "image": "images/products/vassoura-002.jfif",
-    "name": "Vassoura",
-    "description": ""
+    "name": "Vassoura com Cabo – Cerdas Rosas",
+    "description": "Descrição do Produto:\nA Vassoura com Cabo e Cerdas Rosas é ideal para limpeza do dia a dia, oferecendo leveza, praticidade e excelente desempenho na varrição. Possui base plástica verde, resistente e durável, combinada com cabo firme que garante conforto e estabilidade durante o uso. Suas cerdas em tom rosa são flexíveis e eficientes, alcançando cantos e removendo poeira fina e sujeiras com facilidade.\n\nCaracterísticas:\n\nBase em plástico reforçado na cor verde\n\nCerdas rosas, macias e duráveis\n\nCabo resistente para melhor ergonomia\n\nIdeal para pisos internos\n\nLeve, prática e de fácil manuseio\n\nBoa performance na remoção de poeira e resíduos\n\nIndicação de Uso:\nPerfeita para residências, escritórios, comércios e ambientes que necessitam de uma varrição rápida e eficaz."
   },
   {
     "image": "images/products/vassoura-003.jfif",
-    "name": "Vassoura",
-    "description": ""
+    "name": "Vassoura Phenix com Cerdas Azuis",
+    "description": "Descrição do Produto:\nA Vassoura Phenix com Cerdas Azuis combina eficiência e modernidade, oferecendo uma varrição superior para ambientes internos. Possui base reforçada nas cores branco e azul, com cabo resistente que garante firmeza e conforto durante o uso. As cerdas em tom azul vibrante são densas, flexíveis e desenvolvidas para remover poeira fina, cabelos e resíduos com facilidade, alcançando cantos e áreas de difícil acesso.\n\nCaracterísticas:\n\nBase plástica resistente nas cores azul e branco\n\nCerdas azuis flexíveis e de alta durabilidade\n\nCabo firme e ergonômico\n\nVarrição eficiente em pisos internos\n\nExcelente desempenho na remoção de poeira e sujeiras leves\n\nDesign moderno e atraente\n\nIndicação de Uso:\nRecomendada para residências, escritórios, comércios e ambientes que exigem limpeza prática e diária."
   },
   {
     "image": "images/products/veja-gold.jfif",
-    "name": "Veja Gold",
-    "description": ""
+    "name": "Veja Gold – Limpeza Pesada 500ml",
+    "description": "O Veja Gold é o aliado perfeito para a limpeza pesada do dia a dia. Sua fórmula poderosa remove gordura, sujeira difícil e resíduos acumulados com rapidez e eficiência, deixando superfícies brilhantes e com perfume agradável. Ideal para cozinhas, áreas externas, pisos, azulejos e diversas superfícies laváveis.\n\nBenefícios:\n\nAção desengordurante potente\n\nRemove sujeira pesada sem esforço\n\nRende mais e garante limpeza profunda\n\nVersátil para diferentes superfícies\n\nAroma agradável e sensação de frescor."
   },
   {
     "image": "images/products/vorel-perform-desinfetante.jfif",
-    "name": "Vorel Perform Desinfetante",
-    "description": ""
+    "name": "Lysoform Vorel Perform Desinfetante",
+    "description": "O Lysoform Vorel Perform 1L é um desinfetante de alta performance, ideal para garantir higienização profunda em diversos ambientes. Sua fórmula avançada elimina germes, bactérias e vírus, proporcionando um ambiente mais seguro, limpo e protegido. Com fragrância suave e agradável, deixa sensação de frescor por mais tempo.\n\nDiferenciais:\n\nAção desinfetante eficaz\n\nRemove odores indesejáveis\n\nIndicado para pisos, superfícies laváveis e áreas comuns\n\nPronto para uso e de fácil aplicação\n\nAlto rendimento."
   },
   {
     "image": "images/products/x-14.jfif",
-    "name": "X-14",
-    "description": ""
+    "name": "Veja Banheiro X-14 – Limpeza Profunda e Antimofo",
+    "description": "O Veja Banheiro X-14 foi desenvolvido especialmente para remover sujeiras típicas de áreas úmidas, garantindo limpeza profunda e proteção duradoura. Sua fórmula poderosa age contra limo, manchas escurecidas, resíduos de sabão e marcas difíceis, deixando o banheiro visualmente mais limpo e higienizado.\n\nBenefícios:\n\nAção antimofo e antillimo\n\nRemove sujeiras difíceis com rapidez\n\nIdeal para box, azulejos, pisos e louças\n\nDeixa aspecto de limpeza imediata\n\nPraticidade e alto rendimento."
   }
 ];
