@@ -28,6 +28,15 @@
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li>
+                    <a href="carrinho.html" class="cart-link" id="cartIcon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                        Carrinho
+                    </a>
+                </li>
             </ul>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
@@ -147,6 +156,7 @@
     </footer>
 
     <script src="./data.js"></script>
+    <script src="cart.js"></script>
     
     <script>
         // Menu mobile toggle
@@ -206,9 +216,17 @@
                     const productName = product.name || 'Produto sem nome';
                     const productDescription = product.description || 'Descrição não disponível';
                     
+                    // Codificar o produto para evitar problemas com caracteres especiais
+                    const productDataEncoded = encodeURIComponent(JSON.stringify(product));
+                    
                     productCard.innerHTML = `
                         <div class="product-image-container">
                             <img src="${product.image}" alt="${productName}" class="product-image" onerror="this.src='images/products/sem-nome001.jfif'">
+                            <button class="add-to-cart-btn" data-product="${productDataEncoded}" title="Adicionar ao carrinho">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </button>
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">${productName}</h3>
@@ -216,10 +234,24 @@
                         </div>
                     `;
                     
-                    // Adicionar evento de clique para abrir o modal
-                    productCard.addEventListener('click', () => {
-                        openProductModal(product);
+                    // Adicionar evento de clique para abrir o modal (exceto no botão)
+                    productCard.addEventListener('click', (e) => {
+                        // Não abrir modal se clicar no botão de adicionar ao carrinho
+                        if (!e.target.closest('.add-to-cart-btn')) {
+                            openProductModal(product);
+                        }
                     });
+                    
+                    // Event listener para o botão de adicionar ao carrinho
+                    const addToCartBtn = productCard.querySelector('.add-to-cart-btn');
+                    if (addToCartBtn) {
+                        addToCartBtn.addEventListener('click', (e) => {
+                            e.stopPropagation(); // Prevenir que o clique no card abra o modal
+                            const productDataEncoded = addToCartBtn.getAttribute('data-product');
+                            const productData = JSON.parse(decodeURIComponent(productDataEncoded));
+                            cartManager.addToCart(productData);
+                        });
+                    }
                     
                     productsGrid.appendChild(productCard);
                 });
@@ -285,6 +317,9 @@
             // Formatar a descrição preservando quebras de linha
             const formattedDescription = productDescription.replace(/\n/g, '<br>');
             
+            // Codificar o produto para evitar problemas com caracteres especiais
+            const productDataEncoded = encodeURIComponent(JSON.stringify(product));
+            
             modalBody.innerHTML = `
                 <div class="modal-product-image">
                     <img src="${product.image}" alt="${productName}" onerror="this.src='images/products/sem-nome001.jfif'">
@@ -292,8 +327,26 @@
                 <div class="modal-product-info">
                     <h2 class="modal-product-name">${productName}</h2>
                     <div class="modal-product-description">${formattedDescription}</div>
+                    <button class="add-to-cart-btn-modal-bottom" data-product="${productDataEncoded}">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
                 </div>
             `;
+            
+            // Adicionar event listener ao botão do modal
+            const addToCartBtnModalBottom = modalBody.querySelector('.add-to-cart-btn-modal-bottom');
+            
+            if (addToCartBtnModalBottom) {
+                addToCartBtnModalBottom.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const productDataEncoded = addToCartBtnModalBottom.getAttribute('data-product');
+                    const productData = JSON.parse(decodeURIComponent(productDataEncoded));
+                    cartManager.addToCart(productData);
+                });
+            }
             
             modal.style.display = 'block';
             document.body.style.overflow = 'hidden'; // Prevenir scroll da página
@@ -359,15 +412,33 @@
             featuredProducts.forEach((product, index) => {
                 const slide = document.createElement('div');
                 slide.className = 'carousel-slide';
+                // Codificar o produto para evitar problemas com caracteres especiais
+                const productDataEncoded = encodeURIComponent(JSON.stringify(product));
                 slide.innerHTML = `
                     <div class="carousel-slide-content">
                         <div class="carousel-image-container">
                             <img src="${product.image}" alt="${product.name}" class="carousel-image" onerror="this.src='images/products/sem-nome001.jfif'">
+                            <button class="add-to-cart-btn-carousel" data-product="${productDataEncoded}" title="Adicionar ao carrinho">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </button>
                         </div>
                         <h3 class="carousel-product-name">${product.name}</h3>
                     </div>
                 `;
                 carouselTrack.appendChild(slide);
+
+                // Adicionar event listener para o botão de adicionar ao carrinho do carrossel
+                const addToCartBtn = slide.querySelector('.add-to-cart-btn-carousel');
+                if (addToCartBtn) {
+                    addToCartBtn.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevenir qualquer outro evento
+                        const productDataEncoded = addToCartBtn.getAttribute('data-product');
+                        const productData = JSON.parse(decodeURIComponent(productDataEncoded));
+                        cartManager.addToCart(productData);
+                    });
+                }
 
                 // Criar dots
                 const dot = document.createElement('button');
@@ -511,6 +582,11 @@
                     initCarousel();
                 }
             });
+
+            // Atualizar contador do carrinho quando a página carregar
+            if (typeof cartManager !== 'undefined') {
+                cartManager.updateCartIcon();
+            }
         }
     </script>
 </body>
