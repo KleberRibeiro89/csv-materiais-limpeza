@@ -279,12 +279,73 @@
                     return;
                 }
 
-                const term = searchTerm.toLowerCase().trim();
-                const filteredProducts = products.filter(product => {
-                    const name = (product.name || '').toLowerCase();
-                    const description = (product.description || '').toLowerCase();
-                    return name.includes(term) || description.includes(term);
-                });
+                // Dividir o termo de busca em palavras individuais
+                const searchWords = searchTerm.toLowerCase().trim().split(/\s+/).filter(word => word.length > 0);
+                
+                // Filtrar e ranquear produtos por relevância
+                const filteredProducts = products
+                    .map(product => {
+                        const name = (product.name || '').toLowerCase();
+                        const description = (product.description || '').toLowerCase();
+                        const searchText = name + ' ' + description;
+                        
+                        // Verificar se pelo menos uma palavra está presente
+                        const hasAnyWord = searchWords.some(word => searchText.includes(word));
+                        
+                        if (!hasAnyWord) {
+                            return null; // Produto não corresponde à busca
+                        }
+                        
+                        // Calcular pontuação de relevância
+                        let score = 0;
+                        let matchedWords = 0;
+                        
+                        searchWords.forEach((word, index) => {
+                            const wordInName = name.includes(word);
+                            const wordInDescription = description.includes(word);
+                            
+                            if (wordInName || wordInDescription) {
+                                matchedWords++;
+                                
+                                // Pontuação baseada na posição da palavra (primeira palavra = mais pontos)
+                                // Primeira palavra: 1000 pontos, segunda: 500, terceira: 250, etc.
+                                const positionScore = Math.pow(2, searchWords.length - index) * 100;
+                                
+                                // Bônus se a palavra está no nome (mais relevante que descrição)
+                                if (wordInName) {
+                                    score += positionScore * 2; // Nome vale o dobro
+                                } else {
+                                    score += positionScore;
+                                }
+                            }
+                        });
+                        
+                        // Bônus adicional para produtos que contêm múltiplas palavras
+                        if (matchedWords > 1) {
+                            score += matchedWords * 100;
+                        }
+                        
+                        return {
+                            ...product,
+                            _searchScore: score,
+                            _matchedWords: matchedWords
+                        };
+                    })
+                    .filter(product => product !== null) // Remover produtos que não correspondem
+                    .sort((a, b) => {
+                        // Ordenar por pontuação (maior primeiro)
+                        if (b._searchScore !== a._searchScore) {
+                            return b._searchScore - a._searchScore;
+                        }
+                        // Se a pontuação for igual, ordenar por número de palavras correspondentes
+                        return b._matchedWords - a._matchedWords;
+                    })
+                    .map(product => {
+                        // Remover propriedades temporárias de busca
+                        delete product._searchScore;
+                        delete product._matchedWords;
+                        return product;
+                    });
 
                 renderProducts(filteredProducts);
                 
