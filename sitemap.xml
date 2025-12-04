@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Página Principal -->
+    <url>
+        <loc>https://www.csvmateriaislimpeza.com.br/</loc>
+        <lastmod>2025-12-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Página de Produtos -->
+    <url>
+        <loc>https://www.csvmateriaislimpeza.com.br/index.html#produtos</loc>
+        <lastmod>2025-12-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Página Sobre -->
+    <url>
+        <loc>https://www.csvmateriaislimpeza.com.br/index.html#sobre</loc>
+        <lastmod>2025-12-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Página de Contato -->
+    <url>
+        <loc>https://www.csvmateriaislimpeza.com.br/index.html#contato</loc>
+        <lastmod>2025-12-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Página do Blog -->
+    <url>
+        <loc>https://www.csvmateriaislimpeza.com.br/blog.html</loc>
+        <lastmod>2025-12-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Post do Blog: Os 4 Pilares da Limpeza Industrial -->
+    <url>
+        <loc>https://www.csvmateriaislimpeza.com.br/blog/2025-12-04/index.html</loc>
+        <lastmod>2025-12-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Carrinho -->
+    <url>
+        <loc>https://www.csvmateriaislimpeza.com.br/carrinho.html</loc>
+        <lastmod>2025-12-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+</urlset>
