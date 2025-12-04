@@ -1,0 +1,19 @@
+# robots.txt para CSV Materiais de Limpeza
+# Permite que todos os bots indexem o site
+
+User-agent: *
+Allow: /
+
+# Bloquear páginas administrativas e de edição
+Disallow: /editar-produtos.html
+
+# Bloquear arquivos de verificação do Google (não precisam ser indexados)
+Disallow: /google*.html
+
+# Permitir acesso às imagens e recursos
+Allow: /images/
+Allow: /favicon_io/
+Allow: /blog/
+
+# Sitemap
+Sitemap: https://www.csvmateriaislimpeza.com.br/sitemap.xml
