@@ -39,9 +39,17 @@
     <!-- Página do Blog -->
     <url>
         <loc>https://www.csvmateriaislimpeza.com.br/blog.html</loc>
-        <lastmod>2025-12-04</lastmod>
+        <lastmod>2025-12-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    
+    <!-- Post do Blog: Como fazer um checklist de limpeza eficiente? -->
+    <url>
+        <loc>https://www.csvmateriaislimpeza.com.br/blog/2025-12-18/index.html</loc>
+        <lastmod>2025-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     
     <!-- Post do Blog: Os 4 Pilares da Limpeza Industrial -->
