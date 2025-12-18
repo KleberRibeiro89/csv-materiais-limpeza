@@ -1129,6 +1129,13 @@ h1 {
     line-height: 1.6;
 }
 
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .whatsapp-link {
     display: inline-flex;
     align-items: center;
@@ -1152,6 +1159,33 @@ h1 {
 }
 
 .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);
+}
+
+.instagram-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(225, 48, 108, 0.4);
+}
+
+.instagram-icon {
     width: 50px;
     height: 50px;
     fill: white;
@@ -1210,6 +1244,13 @@ h1 {
     color: white;
 }
 
+.footer-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
 .footer-whatsapp {
     display: inline-flex;
     align-items: center;
@@ -1220,7 +1261,6 @@ h1 {
     background: #25D366;
     border-radius: 25px;
     transition: all 0.3s ease;
-    margin-top: 10px;
 }
 
 .footer-whatsapp:hover {
@@ -1229,6 +1269,29 @@ h1 {
 }
 
 .whatsapp-icon-small {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.footer-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.footer-instagram:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);
+}
+
+.instagram-icon-small {
     width: 20px;
     height: 20px;
     fill: white;
@@ -1483,12 +1546,18 @@ h1 {
         width: 100%;
     }
 
-    .whatsapp-link {
+    .contact-links {
+        gap: 15px;
+    }
+
+    .whatsapp-link,
+    .instagram-link {
         padding: 15px 30px;
         font-size: 1.1em;
     }
 
-    .whatsapp-icon {
+    .whatsapp-icon,
+    .instagram-icon {
         width: 40px;
         height: 40px;
     }
