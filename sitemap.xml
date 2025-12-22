@@ -6,34 +6,10 @@
     
     <!-- Página Principal -->
     <url>
-        <loc>https://www.csvmateriaislimpeza.com.br/</loc>
-        <lastmod>2025-12-04</lastmod>
+        <loc>https://www.csvmateriaislimpeza.com.br/index.html</loc>
+        <lastmod>2025-12-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-    </url>
-    
-    <!-- Página de Produtos -->
-    <url>
-        <loc>https://www.csvmateriaislimpeza.com.br/index.html#produtos</loc>
-        <lastmod>2025-12-04</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
-    <!-- Página Sobre -->
-    <url>
-        <loc>https://www.csvmateriaislimpeza.com.br/index.html#sobre</loc>
-        <lastmod>2025-12-04</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <!-- Página de Contato -->
-    <url>
-        <loc>https://www.csvmateriaislimpeza.com.br/index.html#contato</loc>
-        <lastmod>2025-12-04</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
     </url>
     
     <!-- Página do Blog -->
