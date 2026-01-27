@@ -6,7 +6,7 @@
     
     <!-- Página Principal -->
     <url>
-        <loc>https://www.csvmateriaislimpeza.com.br/index.html</loc>
+        <loc>https://csv-materiaisdelimpeza.com.br/index.html</loc>
         <lastmod>2025-12-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -14,7 +14,7 @@
     
     <!-- Página do Blog -->
     <url>
-        <loc>https://www.csvmateriaislimpeza.com.br/blog.html</loc>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog.html</loc>
         <lastmod>2026-01-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -22,7 +22,7 @@
     
     <!-- Post do Blog: Guia Definitivo: Como Garantir a Higienização de Alta Performance em Academias -->
     <url>
-        <loc>https://www.csvmateriaislimpeza.com.br/blog/2026-01-27/index.html</loc>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog/2026-01-27/index.html</loc>
         <lastmod>2026-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -30,7 +30,7 @@
     
     <!-- Post do Blog: Como fazer um checklist de limpeza eficiente? -->
     <url>
-        <loc>https://www.csvmateriaislimpeza.com.br/blog/2025-12-18/index.html</loc>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog/2025-12-18/index.html</loc>
         <lastmod>2025-12-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -38,7 +38,7 @@
     
     <!-- Post do Blog: Os 4 Pilares da Limpeza Industrial -->
     <url>
-        <loc>https://www.csvmateriaislimpeza.com.br/blog/2025-12-04/index.html</loc>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog/2025-12-04/index.html</loc>
         <lastmod>2025-12-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -46,7 +46,7 @@
     
     <!-- Carrinho -->
     <url>
-        <loc>https://www.csvmateriaislimpeza.com.br/carrinho.html</loc>
+        <loc>https://csv-materiaisdelimpeza.com.br/carrinho.html</loc>
         <lastmod>2025-12-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
