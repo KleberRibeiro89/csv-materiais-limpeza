@@ -15,9 +15,17 @@
     <!-- Página do Blog -->
     <url>
         <loc>https://csv-materiaisdelimpeza.com.br/blog.html</loc>
-        <lastmod>2026-01-27</lastmod>
+        <lastmod>2026-01-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    
+    <!-- Post do Blog: Guia de Higienização de Academias: Como combater o odor e as bactérias -->
+    <url>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog/2026-01-28/index.html</loc>
+        <lastmod>2026-01-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     
     <!-- Post do Blog: Guia Definitivo: Como Garantir a Higienização de Alta Performance em Academias -->
