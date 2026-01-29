@@ -15,9 +15,17 @@
     <!-- Página do Blog -->
     <url>
         <loc>https://csv-materiaisdelimpeza.com.br/blog.html</loc>
-        <lastmod>2026-01-28</lastmod>
+        <lastmod>2026-01-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    
+    <!-- Post do Blog: Economia Inteligente: Por que produtos profissionais rendem mais que os de supermercado? -->
+    <url>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog/2026-01-29/index.html</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     
     <!-- Post do Blog: Guia de Higienização de Academias: Como combater o odor e as bactérias -->
