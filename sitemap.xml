@@ -15,9 +15,17 @@
     <!-- Página do Blog -->
     <url>
         <loc>https://csv-materiaisdelimpeza.com.br/blog.html</loc>
-        <lastmod>2026-01-29</lastmod>
+        <lastmod>2026-02-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    
+    <!-- Post do Blog: Como escolher o desinfetante ideal para academias e estúdios de fitness -->
+    <url>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog/2026-02-02/index.html</loc>
+        <lastmod>2026-02-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     
     <!-- Post do Blog: Economia Inteligente: Por que produtos profissionais rendem mais que os de supermercado? -->
