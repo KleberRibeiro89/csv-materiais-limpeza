@@ -15,5 +15,5 @@ Allow: /images/
 Allow: /favicon_io/
 Allow: /blog/
 
-# Sitemap
-Sitemap: https://www.csvmateriaislimpeza.com.br/sitemap.xml
+# Sitemap (use a mesma versão do domínio que está no Search Console: com ou sem www)
+Sitemap: https://csv-materiaisdelimpeza.com.br/sitemap.xml
