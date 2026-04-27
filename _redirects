@@ -1,0 +1,3 @@
+# Netlify / Cloudflare Pages: www → domínio canónico (sem www)
+# https://docs.netlify.com/routing/redirects/
+https://www.csv-materiaisdelimpeza.com.br/*  https://csv-materiaisdelimpeza.com.br/:splat  301!

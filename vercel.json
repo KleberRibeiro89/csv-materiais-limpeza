@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.csv-materiaisdelimpeza.com.br" }],
+      "destination": "https://csv-materiaisdelimpeza.com.br/:path*",
+      "permanent": true
+    }
+  ]
+}

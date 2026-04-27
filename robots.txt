@@ -15,5 +15,5 @@ Allow: /images/
 Allow: /favicon_io/
 Allow: /blog/
 
-# Sitemap (use a mesma versão do domínio que está no Search Console: com ou sem www)
+# Sitemap (URL canónica: HTTPS, sem subdomínio www — alinhar com o Google Search Console)
 Sitemap: https://csv-materiaisdelimpeza.com.br/sitemap.xml

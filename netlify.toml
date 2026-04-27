@@ -1,0 +1,4 @@
+# Site estático — publicar a partir da raiz do repositório
+# Redirecionamento www → canónico: ver ficheiro _redirects na raiz
+[build]
+  publish = "."

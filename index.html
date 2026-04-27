@@ -3,8 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSV Materiais de Limpeza</title>
-    <link rel="canonical" href="https://csv-materiaisdelimpeza.com.br/index.html">
+    <title>CSV Materiais de Limpeza | Produtos profissionais e para residência</title>
+    <meta name="description" content="Materiais e produtos de limpeza profissional para empresas e residência. Detergentes, desinfetantes, equipamentos e dicas no blog. Atendimento e entrega.">
+    <link rel="canonical" href="https://csv-materiaisdelimpeza.com.br/">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CSV Materiais de Limpeza">
+    <meta property="og:title" content="CSV Materiais de Limpeza | Produtos profissionais e para residência">
+    <meta property="og:description" content="Materiais e produtos de limpeza profissional para empresas e residência. Detergentes, desinfetantes, equipamentos e dicas no blog.">
+    <meta property="og:url" content="https://csv-materiaisdelimpeza.com.br/">
+    <meta property="og:image" content="https://csv-materiaisdelimpeza.com.br/images/og-imagem-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="CSV Materiais de Limpeza — produtos profissionais e para residência">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://csv-materiaisdelimpeza.com.br/images/og-imagem-social.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://csv-materiaisdelimpeza.com.br/#organization",
+          "name": "CSV Materiais de Limpeza",
+          "url": "https://csv-materiaisdelimpeza.com.br/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://csv-materiaisdelimpeza.com.br/images/Logo%20CSV%20Materiais%20de%20Limpeza.png"
+          },
+          "image": "https://csv-materiaisdelimpeza.com.br/images/og-imagem-social.png",
+          "description": "Materiais e produtos de limpeza profissional para empresas e residência.",
+          "telephone": "+55-11-94044-4564",
+          "sameAs": [
+            "https://www.instagram.com/csv_material_limpeza_oficial/"
+          ],
+          "areaServed": { "@type": "Country", "name": "Brasil" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://csv-materiaisdelimpeza.com.br/#website",
+          "url": "https://csv-materiaisdelimpeza.com.br/",
+          "name": "CSV Materiais de Limpeza",
+          "description": "Materiais e produtos de limpeza profissional para empresas e residência. Detergentes, desinfetantes, equipamentos e dicas no blog.",
+          "publisher": { "@id": "https://csv-materiaisdelimpeza.com.br/#organization" },
+          "inLanguage": "pt-BR"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://csv-materiaisdelimpeza.com.br/#webpage",
+          "url": "https://csv-materiaisdelimpeza.com.br/",
+          "name": "CSV Materiais de Limpeza | Produtos profissionais e para residência",
+          "isPartOf": { "@id": "https://csv-materiaisdelimpeza.com.br/#website" },
+          "about": { "@id": "https://csv-materiaisdelimpeza.com.br/#organization" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://csv-materiaisdelimpeza.com.br/images/og-imagem-social.png"
+          }
+        }
+      ]
+    }
+    </script>
     
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -13,13 +72,15 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="shortcut icon" href="favicon_io/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <!-- LCP: imagem do 1.º slide do carrossel — manter igual a featuredProducts[0].image em data.js -->
+    <link rel="preload" as="image" href="images/products/alcool-70.jfif">
 </head>
 <body>
-    <nav>
+    <nav aria-label="Principal">
         <div class="navbar">
             <div class="logo-container">
                 <a href="index.html">
-                    <img src="images/Logo CSV Materiais de Limpeza.png" alt="Logo CSV Materiais de Limpeza" class="logo">
+                    <img src="images/Logo CSV Materiais de Limpeza.png" alt="Logo CSV Materiais de Limpeza" class="logo" width="180" height="120" decoding="async">
                 </a>
                 <p class="slogan">Tudo para a limpeza da sua empresa e residência</p>
             </div>
@@ -39,11 +100,11 @@
                     </a>
                 </li>
             </ul>
-            <div class="menu-toggle" id="menuToggle">
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir ou fechar menu" aria-expanded="false" aria-controls="menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -53,8 +114,8 @@
             <p class="subtitle">Tudo para a limpeza da sua empresa e residência</p>
             
             <div class="featured-products">
-                <h2 class="featured-title">Produtos Mais Vendidos</h2>
-                <div class="carousel-container">
+                <h2 class="featured-title" id="carousel-heading">Produtos Mais Vendidos</h2>
+                <div class="carousel-container" role="region" aria-roledescription="carrossel" aria-labelledby="carousel-heading">
                     <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Produto anterior">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M15 18l-6-6 6-6"/>
@@ -101,8 +162,8 @@
                         <circle cx="11" cy="11" r="8"></circle>
                         <path d="m21 21-4.35-4.35"></path>
                     </svg>
-                    <input type="text" id="searchInput" class="search-input" placeholder="Buscar produtos...">
-                    <button class="search-clear" id="searchClear" style="display: none;">
+                    <input type="search" id="searchInput" class="search-input" placeholder="Buscar produtos..." aria-label="Buscar produtos por nome ou descrição" autocomplete="off">
+                    <button type="button" class="search-clear" id="searchClear" style="display: none;" aria-label="Limpar busca">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M18 6L6 18M6 6l12 12"/>
                         </svg>
@@ -116,9 +177,9 @@
         </section>
 
         <!-- Modal de Detalhes do Produto -->
-        <div class="modal" id="productModal">
+        <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
             <div class="modal-content">
-                <span class="modal-close" id="modalClose">&times;</span>
+                <button type="button" class="modal-close" id="modalClose" aria-label="Fechar detalhes do produto">&times;</button>
                 <div class="modal-body" id="modalBody">
                     <!-- Conteúdo será inserido via JavaScript -->
                 </div>
@@ -196,7 +257,8 @@
         const menu = document.getElementById('menu');
 
         menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
+            const open = menu.classList.toggle('active');
+            menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
         });
 
         // Fechar menu ao clicar em um link
@@ -204,6 +266,7 @@
         menuLinks.forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
             });
         });
 
@@ -253,8 +316,8 @@
                     
                     productCard.innerHTML = `
                         <div class="product-image-container">
-                            <img src="${product.image}" alt="${productName}" class="product-image" onerror="this.src='images/products/sem-nome001.jfif'">
-                            <button class="add-to-cart-btn" data-product="${productDataEncoded}" title="Adicionar ao carrinho">
+                            <img src="${product.image}" alt="${productName}" class="product-image" width="400" height="250" loading="lazy" decoding="async" onerror="this.src='images/products/sem-nome001.jfif'">
+                            <button type="button" class="add-to-cart-btn" data-product="${productDataEncoded}" title="Adicionar ao carrinho" aria-label="Adicionar ao carrinho">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
                                 </svg>
@@ -439,12 +502,12 @@
             
             modalBody.innerHTML = `
                 <div class="modal-product-image">
-                    <img src="${product.image}" alt="${productName}" onerror="this.src='images/products/sem-nome001.jfif'">
+                    <img src="${product.image}" alt="${productName}" width="360" height="360" decoding="async" onerror="this.src='images/products/sem-nome001.jfif'">
                 </div>
                 <div class="modal-product-info">
-                    <h2 class="modal-product-name">${productName}</h2>
+                    <h2 class="modal-product-name" id="modalProductTitle">${productName}</h2>
                     <div class="modal-product-description">${formattedDescription}</div>
-                    <button class="add-to-cart-btn-modal-bottom" data-product="${productDataEncoded}">
+                    <button type="button" class="add-to-cart-btn-modal-bottom" data-product="${productDataEncoded}" aria-label="Adicionar ao carrinho">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
                         </svg>
@@ -531,11 +594,14 @@
                 slide.className = 'carousel-slide';
                 // Codificar o produto para evitar problemas com caracteres especiais
                 const productDataEncoded = encodeURIComponent(JSON.stringify(product));
+                const imgPerf = index === 0
+                    ? 'width="200" height="200" decoding="async" fetchpriority="high" loading="eager"'
+                    : 'width="200" height="200" decoding="async" loading="lazy"';
                 slide.innerHTML = `
                     <div class="carousel-slide-content">
                         <div class="carousel-image-container">
-                            <img src="${product.image}" alt="${product.name}" class="carousel-image" onerror="this.src='images/products/sem-nome001.jfif'">
-                            <button class="add-to-cart-btn-carousel" data-product="${productDataEncoded}" title="Adicionar ao carrinho">
+                            <img src="${product.image}" alt="${product.name}" class="carousel-image" ${imgPerf} onerror="this.src='images/products/sem-nome001.jfif'">
+                            <button type="button" class="add-to-cart-btn-carousel" data-product="${productDataEncoded}" title="Adicionar ao carrinho" aria-label="Adicionar ao carrinho">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
                                 </svg>
@@ -559,8 +625,9 @@
 
                 // Criar dots
                 const dot = document.createElement('button');
+                dot.type = 'button';
                 dot.className = 'carousel-dot';
-                dot.setAttribute('aria-label', `Ir para slide ${index + 1}`);
+                dot.setAttribute('aria-label', `Ir para o slide ${index + 1} de ${featuredProducts.length}`);
                 dot.addEventListener('click', () => goToSlide(index));
                 carouselDots.appendChild(dot);
             });
@@ -575,6 +642,7 @@
                 // Atualizar dots
                 dots.forEach((dot, index) => {
                     dot.classList.toggle('active', index === currentSlide);
+                    dot.setAttribute('aria-current', index === currentSlide ? 'true' : 'false');
                 });
             }
 

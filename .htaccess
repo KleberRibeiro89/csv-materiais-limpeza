@@ -1,0 +1,7 @@
+# Apache: forçar versão canónica sem www (HTTPS)
+# Colocar na raiz do site publicado. Requer mod_rewrite.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.csv-materiaisdelimpeza\.com\.br$ [NC]
+  RewriteRule ^(.*)$ https://csv-materiaisdelimpeza.com.br/$1 [L,R=301]
+</IfModule>
