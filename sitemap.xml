@@ -15,9 +15,17 @@
     <!-- Página do Blog -->
     <url>
         <loc>https://csv-materiaisdelimpeza.com.br/blog.html</loc>
-        <lastmod>2026-04-27</lastmod>
+        <lastmod>2026-05-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    
+    <!-- Post do Blog: Limpeza de restaurante: guia para salão, cozinha e áreas de apoio -->
+    <url>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog/2026-05-05/</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     
     <!-- Post do Blog: Limpeza de comércios: guia para lojas, vitrines e áreas de circulação -->
