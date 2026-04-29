@@ -15,7 +15,7 @@
     <!-- Página do Blog -->
     <url>
         <loc>https://csv-materiaisdelimpeza.com.br/blog.html</loc>
-        <lastmod>2026-05-05</lastmod>
+        <lastmod>2026-04-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -24,6 +24,14 @@
     <url>
         <loc>https://csv-materiaisdelimpeza.com.br/blog/2026-05-05/</loc>
         <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Post do Blog: Limpeza em escritórios e coworkings -->
+    <url>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog/2026-04-29/</loc>
+        <lastmod>2026-04-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>

@@ -7,8 +7,11 @@ Allow: /
 # Bloquear páginas administrativas e de edição
 Disallow: /editar-produtos.html
 
-# Bloquear arquivos de verificação do Google (não precisam ser indexados)
-Disallow: /google*.html
+# Não bloqueie o ficheiro HTML de verificação do Search Console (google*.html):
+# o Google precisa conseguir obtê-lo para confirmar a propriedade.
+
+# Ficheiros acidentalmente publicados — não são conteúdo do site
+Disallow: /*.rdp$
 
 # Permitir acesso às imagens e recursos
 Allow: /images/
