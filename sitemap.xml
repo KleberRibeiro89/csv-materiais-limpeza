@@ -15,9 +15,25 @@
     <!-- Página do Blog -->
     <url>
         <loc>https://csv-materiaisdelimpeza.com.br/blog.html</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-05-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    
+    <!-- Post do Blog: Loja de material de limpeza perto de mim -->
+    <url>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog/2026-05-07/</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Post do Blog: Empresas em Campo Limpo Paulista — materiais de limpeza -->
+    <url>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog/2026-05-06/</loc>
+        <lastmod>2026-05-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     
     <!-- Post do Blog: Limpeza de restaurante: guia para salão, cozinha e áreas de apoio -->
