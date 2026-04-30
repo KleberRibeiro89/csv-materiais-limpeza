@@ -1,3 +1,10 @@
 # Netlify / Cloudflare Pages: www → domínio canónico (sem www)
 # https://docs.netlify.com/routing/redirects/
 https://www.csv-materiaisdelimpeza.com.br/*  https://csv-materiaisdelimpeza.com.br/:splat  301!
+
+# Índice do blog: URL canónica = /blog.html (sitemap + canonical). /blog era duplicata 200 → “rastreada, não indexada”.
+/blog  /blog.html  301
+/blog/  /blog.html  301
+
+# Evitar duplicata /blog/<data>/index.html vs /blog/<data>/ (canonical = pasta com barra)
+/blog/:slug/index.html  /blog/:slug/  301
