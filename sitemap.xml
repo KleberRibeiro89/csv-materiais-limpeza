@@ -44,6 +44,14 @@
         <priority>0.7</priority>
     </url>
     
+    <!-- Post do Blog: Comprar materiais de limpeza online — venda pelo site CSV -->
+    <url>
+        <loc>https://csv-materiaisdelimpeza.com.br/blog/2026-05-04/</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
     <!-- Post do Blog: Limpeza, organização e saúde mental: como o ambiente influencia o bem-estar -->
     <url>
         <loc>https://csv-materiaisdelimpeza.com.br/blog/2026-04-30/</loc>
