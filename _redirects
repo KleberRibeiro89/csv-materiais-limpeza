@@ -2,6 +2,9 @@
 # https://docs.netlify.com/routing/redirects/
 https://www.csv-materiaisdelimpeza.com.br/*  https://csv-materiaisdelimpeza.com.br/:splat  301!
 
+# Home: canonical no HTML = "https://.../" — /index.html não deve devolver 200 em duplicata (GSC: erro de redirecionamento / URL alternativa).
+/index.html  /  301
+
 # Índice do blog: URL canónica = /blog.html (sitemap + canonical). /blog era duplicata 200 → “rastreada, não indexada”.
 /blog  /blog.html  301
 /blog/  /blog.html  301
